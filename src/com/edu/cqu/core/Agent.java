@@ -47,6 +47,14 @@ public abstract class Agent extends Process {
     protected abstract void postInit();
     protected abstract void initRun();
 
+    protected int getLocalCosts(){
+        int cost = 0;
+        for (int neighborId:neighbors) {
+            cost += constraintCosts.get(neighborId)[valueIndex][localView.get(neighborId)];
+        }
+        return cost;
+    }
+
     protected abstract void disposeMessage(Messsage messsage);
     protected abstract void sendMessage(Messsage messsage);
 
