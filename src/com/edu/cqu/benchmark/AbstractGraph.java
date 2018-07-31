@@ -6,7 +6,7 @@ import java.util.List;
 import java.util.Random;
 import org.jdom2.Element;
 
-public class AbstractGraph {
+public abstract class AbstractGraph {
     protected String name;
     protected String type = "DCOP";
     protected String benchmark = "RandomDCOP";
@@ -275,7 +275,7 @@ public class AbstractGraph {
         return relationRootElement;
     }
 
-    private String getTuples() {
+    protected String getTuples() {
         StringBuilder stringBuilder = new StringBuilder();
         for (int i = 0; i < domainsize; i++) {
             for (int j = 0; j < domainsize; j++) {
@@ -306,4 +306,5 @@ public class AbstractGraph {
         guipresentation.setAttribute("nbTuples", String.valueOf(nbTuples));
         return guipresentation;
     }
+    public abstract void generateConstraint();
 }
