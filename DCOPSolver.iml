@@ -7,5 +7,20 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="jar://$APPLICATION_HOME_DIR$/lib/jdom-2.0.6-contrib.jar!/" />
+          <root url="jar://$APPLICATION_HOME_DIR$/lib/jdom-2.0.6-junit.jar!/" />
+          <root url="jar://$APPLICATION_HOME_DIR$/lib/jdom-2.0.6.jar!/" />
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar://$APPLICATION_HOME_DIR$/lib/jdom-2.0.6-javadoc.jar!/" />
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar://$APPLICATION_HOME_DIR$/lib/jdom-2.0.6-sources.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
   </component>
 </module>
