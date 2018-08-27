@@ -1,4 +1,5 @@
 package com.edu;
 
-public class test {
+public class te
+{
 }

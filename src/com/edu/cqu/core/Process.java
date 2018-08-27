@@ -2,7 +2,7 @@ package com.edu.cqu.core;
 
 import java.util.concurrent.atomic.AtomicBoolean;
 
-public abstract class Process {
+public abstract class Process extends Thread {
     private Thread thread;
     private String threadName;
     private AtomicBoolean isRunning;
@@ -19,21 +19,22 @@ public abstract class Process {
             }
             isRunning.set(true);
         }
-        thread = new Thread(new Runnable() {
+        Thread thread = new Thread(new Runnable() {
             @Override
             public void run() {
                 preExecution();
                 while (true){
                     synchronized (isRunning){
-                        if (!isRunning.get()){
+                        if (isRunning.get()){
                             break;
                         }
                     }
                     execution();
                 }
                 postExecution();
+                System.out.println(threadName + "is stopped!");
             }
-        },this.threadName);
+        },threadName);
         thread.start();
     }
 
@@ -45,11 +46,14 @@ public abstract class Process {
         }
     }
 
+    public abstract void postExecution();
 
-    protected abstract void postExecution();
+    public abstract void execution();
 
-    protected abstract void execution();
+    public abstract void preExecution();
 
-    protected abstract void preExecution();
+    public boolean isRunning(){
+        return isRunning.get();
+    }
 
 }

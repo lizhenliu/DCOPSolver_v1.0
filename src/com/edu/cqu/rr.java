@@ -1,4 +1,4 @@
 package com.edu.cqu;
 
-public class test {
+public class rr {
 }

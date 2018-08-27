@@ -1,15 +1,15 @@
 package com.edu.cqu.core;
 
-public class Messsage {
+public class Message {
     private int idSender;
     private int idReceiver;
-    private int type;
+    private int msgType;
     private Object value;
 
-    public Messsage(int idSender, int idReceiver, int type, Object value) {
+    public Message(int idSender, int idReceiver, int msgType, Object value) {
         this.idSender = idSender;
         this.idReceiver = idReceiver;
-        this.type = type;
+        this.msgType = msgType;
         this.value = value;
     }
 
@@ -29,12 +29,12 @@ public class Messsage {
         this.idReceiver = idReceiver;
     }
 
-    public int getType() {
-        return type;
+    public int getMsgType() {
+        return msgType;
     }
 
-    public void setType(int type) {
-        this.type = type;
+    public void setMsgType(int msgType) {
+        this.msgType = msgType;
     }
 
     public Object getValue() {
