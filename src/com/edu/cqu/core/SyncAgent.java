@@ -27,8 +27,10 @@ public abstract class SyncAgent extends Agent {
 
     }
 
+
+
     @Override
-    public void sendMessahe(Message message) {
+    public void sendMessage(Message message) {
 
     }
 

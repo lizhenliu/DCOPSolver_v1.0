@@ -44,7 +44,7 @@ public abstract class Agent extends Process {
 
     protected abstract void runFinished();
 
-    public abstract void sendMessahe(Message message);
+    public abstract void sendMessage(Message message);
     public abstract void disposeMessage(Message message);
 
     public int getLocalCost(){
