@@ -12,6 +12,7 @@ public abstract class Agent extends Process {
     protected Map<Integer,int[][]> constraintCosts;
     protected HashMap<Integer,Integer> localView;
     protected int valueIndex;
+    protected int localCost;
 
     public Agent(int id,int[]domain,int[]neighbors,Map<Integer,int[][]> constraintCosts,Map<Integer,int[]> neighborDomains) {
         super("Agent: " +id);

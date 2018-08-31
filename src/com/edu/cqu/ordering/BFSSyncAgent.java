@@ -8,8 +8,8 @@ import java.util.*;
 
 public class BFSSyncAgent extends SyncAgent {
 
-    public static final int MSG_TYPE_LAYER = 0XFFFFD0;
-    public static final int MSG_TYPE_ACK = 0XFFFFD1;
+    public static final int MSG_TYPE_LAYER = 0XFFFBF0;
+    public static final int MSG_TYPE_ACK = 0XFFFBF1;
 
     protected int parent;
     protected int level;
@@ -49,6 +49,14 @@ public class BFSSyncAgent extends SyncAgent {
             Message message = new Message(this.id,childId,MSG_TYPE_LAYER,parentLevel);
             sendMessage(message);
         }
+    }
+
+    protected boolean isRootAgent(){
+        return parent <= 0;
+    }
+
+    protected boolean isLeafAgent(){
+        return children.size() == 0;
     }
 
     @Override
