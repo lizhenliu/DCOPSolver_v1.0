@@ -1,4 +1,4 @@
 package com.edu.cqu.result.interfaces;
 
-public class ResultAls {
+public class Manipulator {
 }

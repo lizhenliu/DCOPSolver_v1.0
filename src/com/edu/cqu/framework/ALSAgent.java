@@ -1,7 +1,6 @@
 package com.edu.cqu.framework;
 
 import com.edu.cqu.core.Message;
-import com.edu.cqu.core.SyncAgent;
 import com.edu.cqu.core.SyncMailer;
 import com.edu.cqu.ordering.BFSSyncAgent;
 
