@@ -1,4 +1,4 @@
 package com.edu.cqu.result.annotations;
 
-public class CycleLength {
+public @interface CycleLength {
 }

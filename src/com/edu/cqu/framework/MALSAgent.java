@@ -9,7 +9,7 @@ import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.Map;
 
-public abstract class MALSAgentCycle extends BFSSyncAgent {
+public abstract class MALSAgent extends BFSSyncAgent {
 
     public static final int TYPE_ALSCOST_MESSAGE = 0XFFFBD3;
     public static final int TYPE_BEST_MESSAGE = 0XFFFBD4;
@@ -35,7 +35,7 @@ public abstract class MALSAgentCycle extends BFSSyncAgent {
     private int alsCycleCount;
     private boolean [] isChanged;
 
-    public MALSAgentCycle(int id, int[] domain, int[] neighbours, Map<Integer, int[][]> constraintCosts, Map<Integer, int[]> neighbourDomains, SyncMailer mailer) {
+    public MALSAgent(int id, int[] domain, int[] neighbours, Map<Integer, int[][]> constraintCosts, Map<Integer, int[]> neighbourDomains, SyncMailer mailer) {
         super(id, domain, neighbours, constraintCosts, neighbourDomains, mailer);
         accCostList = new int[POPULATION];
         bestCostList = new int[POPULATION];

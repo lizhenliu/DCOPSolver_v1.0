@@ -2,15 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6e7212df-26d5-426a-b162-c117bdc6decd" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/src/com/edu/cqu/result/MinManipulator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/edu/cqu/framework/ALSAgent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/edu/cqu/framework/ALSAgent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/edu/cqu/result/interfaces/AbstractManipulator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/edu/cqu/result/AbstractManipulator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/edu/cqu/result/interfaces/AddManipulator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/edu/cqu/result/AddManipulator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/edu/cqu/result/interfaces/MaxManipulator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/edu/cqu/result/MaxManipulator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/edu/cqu/result/interfaces/Result.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/edu/cqu/result/interfaces/Manipulator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/edu/cqu/result/interfaces/ResultAls.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/edu/cqu/result/ResultAls.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/edu/cqu/result/interfaces/ResultCycle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/edu/cqu/result/ResultCycle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/edu/cqu/result/interfaces/SubtractManipulator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/edu/cqu/result/SubtractManipulator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/edu/cqu/framework/MALSAgent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/edu/cqu/framework/MALSAgent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/edu/cqu/result/AbstractManipulator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/edu/cqu/result/AbstractManipulator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/edu/cqu/result/AddManipulator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/edu/cqu/result/AddManipulator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/edu/cqu/result/MaxManipulator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/edu/cqu/result/MaxManipulator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/edu/cqu/result/Result.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/edu/cqu/result/Result.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/edu/cqu/result/ResultCycle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/edu/cqu/result/ResultCycle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/edu/cqu/result/SubtractManipulator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/edu/cqu/result/SubtractManipulator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/edu/cqu/result/annotations/AverageField.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/edu/cqu/result/annotations/AverageField.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/edu/cqu/result/annotations/CycleLength.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/edu/cqu/result/annotations/CycleLength.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/edu/cqu/result/annotations/CycleOffset.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/edu/cqu/result/annotations/CycleOffset.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/edu/cqu/result/annotations/NotRecordCostInCycle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/edu/cqu/result/annotations/NotRecordCostInCycle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/edu/cqu/result/interfaces/Manipulator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/edu/cqu/result/interfaces/Manipulator.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -22,11 +27,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ALSAgent.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/edu/cqu/framework/ALSAgent.java">
+      <file leaf-file-name="AverageField.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/edu/cqu/result/annotations/AverageField.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="26">
-              <caret line="12" column="55" selection-start-line="12" selection-start-column="47" selection-end-line="12" selection-end-column="55" />
+            <state relative-caret-position="234">
+              <caret line="9" column="18" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -34,11 +39,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MALSAgent.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/edu/cqu/framework/MALSAgent.java">
+      <file leaf-file-name="Result.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/edu/cqu/result/Result.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4550">
-              <caret line="175" column="26" selection-start-line="175" selection-start-column="26" selection-end-line="175" selection-end-column="26" />
+            <state relative-caret-position="260">
+              <caret line="95" column="54" lean-forward="true" selection-start-line="95" selection-start-column="54" selection-end-line="95" selection-end-column="54" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -49,71 +54,8 @@
       <file leaf-file-name="AbstractManipulator.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/edu/cqu/result/AbstractManipulator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="52">
-              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SubtractManipulator.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/edu/cqu/result/SubtractManipulator.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="52">
-              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MaxManipulator.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/edu/cqu/result/MaxManipulator.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="52">
-              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AddManipulator.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/edu/cqu/result/AddManipulator.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="52">
-              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ResultAls.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/edu/cqu/result/ResultAls.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="52">
-              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ResultCycle.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/edu/cqu/result/ResultCycle.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="52">
-              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Manipulator.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/edu/cqu/result/interfaces/Manipulator.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="52">
-              <caret line="2" column="24" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Result.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/edu/cqu/result/Result.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="52">
-              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+            <state relative-caret-position="66">
+              <caret line="5" column="18" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -158,7 +100,6 @@
         <option value="$PROJECT_DIR$/src/com/edu.java" />
         <option value="$PROJECT_DIR$/src/edu/test.java" />
         <option value="$PROJECT_DIR$/src/com/edu/te.java" />
-        <option value="$PROJECT_DIR$/src/com/edu/cqu/result/Result.java" />
         <option value="$PROJECT_DIR$/src/com/edu/cqu/util/DialogUtil.java" />
         <option value="$PROJECT_DIR$/src/com/edu/cqu/parser/DialogUtil.java" />
         <option value="$PROJECT_DIR$/src/com/edu/cqu/parser/Parser.java" />
@@ -180,6 +121,18 @@
         <option value="$PROJECT_DIR$/src/com/edu/cqu/core/Agent.java" />
         <option value="$PROJECT_DIR$/src/com/edu/cqu/framework/ALSAgent.java" />
         <option value="$PROJECT_DIR$/src/com/edu/cqu/framework/MALSAgent.java" />
+        <option value="$PROJECT_DIR$/src/com/edu/cqu/result/AbstractManipulator.java" />
+        <option value="$PROJECT_DIR$/src/com/edu/cqu/result/interfaces/Manipulator.java" />
+        <option value="$PROJECT_DIR$/src/com/edu/cqu/result/AddManipulator.java" />
+        <option value="$PROJECT_DIR$/src/com/edu/cqu/result/SubtractManipulator.java" />
+        <option value="$PROJECT_DIR$/src/com/edu/cqu/result/MaxManipulator.java" />
+        <option value="$PROJECT_DIR$/src/com/edu/cqu/result/annotations/AverageField.java" />
+        <option value="$PROJECT_DIR$/src/com/edu/cqu/result/annotations/CycleLength.java" />
+        <option value="$PROJECT_DIR$/src/com/edu/cqu/result/annotations/CycleOffset.java" />
+        <option value="$PROJECT_DIR$/src/com/edu/cqu/result/annotations/NotRecordCostInCycle.java" />
+        <option value="$PROJECT_DIR$/src/com/edu/cqu/result/MinManipulator.java" />
+        <option value="$PROJECT_DIR$/src/com/edu/cqu/result/ResultCycle.java" />
+        <option value="$PROJECT_DIR$/src/com/edu/cqu/result/Result.java" />
       </list>
     </option>
   </component>
@@ -192,11 +145,11 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
-    <option name="x" value="130" />
-    <option name="y" value="76" />
-    <option name="width" value="1781" />
-    <option name="height" value="930" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="123" />
+    <option name="y" value="48" />
+    <option name="width" value="1415" />
+    <option name="height" value="1007" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -206,9 +159,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
       <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -232,7 +183,7 @@
               <item name="DCOPSolver" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="cqu" type="462c0819:PsiDirectoryNode" />
-              <item name="framework" type="462c0819:PsiDirectoryNode" />
+              <item name="result" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="DCOPSolver" type="b2602c69:ProjectViewProjectNode" />
@@ -240,11 +191,22 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="cqu" type="462c0819:PsiDirectoryNode" />
               <item name="result" type="462c0819:PsiDirectoryNode" />
+              <item name="annotations" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DCOPSolver" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DCOPSolver" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="cqu" type="462c0819:PsiDirectoryNode" />
+              <item name="result" type="462c0819:PsiDirectoryNode" />
+              <item name="interfaces" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -253,7 +215,7 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="Arquillian JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.Arquillian JUnit4" value="" />
     <property name="create.test.in.the.same.root" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../code/DCOPSolver" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -265,17 +227,17 @@
     <key name="CreateTestDialog.RecentsKey">
       <recent name="com.edu.cqu.core" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\DCOP\DCOPSolver\src\com\edu\cqu\benchmark\dcop" />
-      <recent name="E:\DCOP\DCOPSolver\src\com\edu\cqu\benchmark" />
-      <recent name="E:\DCOP\DCOPSolver\src\com\edu\cqu\benchmark\randomdcops" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\DCOP\DCOPSolver\src\com\edu\cqu" />
+      <recent name="E:\DCOP\DCOPSolver\src\com\edu" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\DCOP\DCOPSolver\src\com\edu\cqu" />
-      <recent name="E:\DCOP\DCOPSolver\src\com\edu" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\DCOP\DCOPSolver\src\com\edu\cqu\benchmark\dcop" />
+      <recent name="E:\DCOP\DCOPSolver\src\com\edu\cqu\benchmark" />
+      <recent name="E:\DCOP\DCOPSolver\src\com\edu\cqu\benchmark\randomdcops" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -402,15 +364,17 @@
       <workItem from="1535594284856" duration="5066000" />
       <workItem from="1535615088267" duration="5758000" />
       <workItem from="1535678985224" duration="4436000" />
-      <workItem from="1535718256164" duration="912000" />
+      <workItem from="1535718256164" duration="1512000" />
+      <workItem from="1535938077200" duration="8177000" />
+      <workItem from="1535954763313" duration="10359000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="54762000" />
+    <option name="totallyTimeSpent" value="73898000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="87" y="51" width="1187" height="620" extended-state="0" />
+    <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
@@ -421,19 +385,19 @@
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.24531516" />
       <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.24531516" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20716113" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21467604" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
       <window_info anchor="right" id="Theme Preview" order="3" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="Messages" order="7" weight="0.32879046" />
@@ -455,9 +419,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/edu/benchmark/dcop/scaleFreeNetWork/ScaleFreeNetWorkGenerator.java" />
-    <entry file="file://$PROJECT_DIR$/src/com/edu/cqu/benchmark/dcop/randomdcops/RandomADCOPGenerator.java" />
-    <entry file="file://$PROJECT_DIR$/src/com/edu/cqu/benchmark/AbstractGraph.java" />
     <entry file="file://$PROJECT_DIR$/src/com/edu/cqu/benchmark/Contentwriter.java" />
     <entry file="file://$PROJECT_DIR$/src/com/edu/cqu/benchmark/dcop/randomdcops/RandomDCOPGenerator.java" />
     <entry file="file://$PROJECT_DIR$/src/edu/FinishedListener.java" />
@@ -547,20 +508,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/edu/cqu/result/interfaces/Result.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="52">
-          <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/edu/cqu/utils/FileUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="52">
-          <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/edu/cqu/result/interfaces/Result.java" />
     <entry file="file://$PROJECT_DIR$/src/com/edu/cqu/core/SyncAgent.java">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -627,58 +575,37 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="183">
           <caret line="97" column="52" selection-start-line="97" selection-start-column="52" selection-end-line="97" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/edu/cqu/framework/ALSAgent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="12" column="55" selection-start-line="12" selection-start-column="47" selection-end-line="12" selection-end-column="55" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/edu/cqu/result/annotations/NotRecordCostInCycle.java">
+    <entry file="file://$PROJECT_DIR$/src/com/edu/cqu/framework/MALSAgent.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="52">
-          <caret line="2" column="33" selection-start-line="2" selection-start-column="33" selection-end-line="2" selection-end-column="33" />
+        <state relative-caret-position="962">
+          <caret line="37" column="20" selection-start-line="37" selection-start-column="20" selection-end-line="37" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/edu/cqu/result/annotations/CycleOffset.java">
+    <entry file="file://$PROJECT_DIR$/src/com/edu/cqu/result/ResultCycle.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="52">
-          <caret line="2" column="24" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/edu/cqu/result/annotations/CycleLength.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="52">
-          <caret line="2" column="24" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/edu/cqu/result/annotations/AverageField.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="52">
-          <caret line="2" column="25" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/edu/cqu/result/AbstractManipulator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="52">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/edu/cqu/result/MaxManipulator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="52">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/edu/cqu/result/AddManipulator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="52">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        <state relative-caret-position="233">
+          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+          <folding>
+            <element signature="e#204#205#0" expanded="true" />
+            <element signature="e#245#246#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -689,48 +616,131 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/edu/cqu/result/ResultCycle.java">
+    <entry file="file://$PROJECT_DIR$/src/com/edu/cqu/utils/FileUtils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="52">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        <state relative-caret-position="78">
+          <caret line="3" column="1" lean-forward="true" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/edu/cqu/result/interfaces/Manipulator.java">
+    <entry file="file://$PROJECT_DIR$/src/com/edu/cqu/result/annotations/CycleLength.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="52">
-          <caret line="2" column="24" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
+          <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/edu/cqu/result/Result.java">
+    <entry file="file://$PROJECT_DIR$/src/com/edu/cqu/result/annotations/CycleOffset.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="52">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/edu/cqu/result/SubtractManipulator.java">
+    <entry file="file://$PROJECT_DIR$/src/com/edu/cqu/result/annotations/NotRecordCostInCycle.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="52">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/edu/cqu/framework/ALSAgent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="26">
-          <caret line="12" column="55" selection-start-line="12" selection-start-column="47" selection-end-line="12" selection-end-column="55" />
+        <state relative-caret-position="234">
+          <caret line="9" column="18" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/edu/cqu/framework/MALSAgent.java">
+    <entry file="file://$PROJECT_DIR$/src/com/edu/cqu/result/MaxManipulator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4550">
-          <caret line="175" column="26" selection-start-line="175" selection-start-column="26" selection-end-line="175" selection-end-column="26" />
+        <state relative-caret-position="390">
+          <caret line="15" column="38" lean-forward="true" selection-start-line="15" selection-start-column="38" selection-end-line="15" selection-end-column="38" />
+          <folding>
+            <element signature="e#146#147#0" expanded="true" />
+            <element signature="e#192#193#0" expanded="true" />
+            <element signature="e#260#261#0" expanded="true" />
+            <element signature="e#304#305#0" expanded="true" />
+            <element signature="e#375#376#0" expanded="true" />
+            <element signature="e#420#421#0" expanded="true" />
+            <element signature="e#485#486#0" expanded="true" />
+            <element signature="e#528#529#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Program Files (x86)/Java/jdk1.8.0_144/src.zip!/java/lang/Class.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="1913" column="19" selection-start-line="1913" selection-start-column="19" selection-end-line="1913" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/edu/cqu/result/AddManipulator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="52">
+          <caret line="2" column="44" lean-forward="true" selection-start-line="2" selection-start-column="44" selection-end-line="2" selection-end-column="44" />
+          <folding>
+            <element signature="e#147#148#0" expanded="true" />
+            <element signature="e#181#182#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Program Files (x86)/Java/jdk1.8.0_144/src.zip!/java/lang/reflect/AccessibleObject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="189" column="38" selection-start-line="189" selection-start-column="19" selection-end-line="189" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/edu/cqu/result/MinManipulator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="4" column="20" lean-forward="true" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
+          <folding>
+            <element signature="e#146#147#0" expanded="true" />
+            <element signature="e#192#193#0" expanded="true" />
+            <element signature="e#485#486#0" expanded="true" />
+            <element signature="e#528#529#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/edu/cqu/result/interfaces/Manipulator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="6" column="8" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/edu/cqu/result/SubtractManipulator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="20" column="26" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="26" />
+          <folding>
+            <element signature="e#151#152#0" expanded="true" />
+            <element signature="e#185#186#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/edu/cqu/result/annotations/AverageField.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="9" column="18" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/edu/cqu/result/AbstractManipulator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="5" column="18" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/edu/cqu/result/Result.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="95" column="54" lean-forward="true" selection-start-line="95" selection-start-column="54" selection-end-line="95" selection-end-column="54" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
