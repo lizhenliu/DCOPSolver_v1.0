@@ -38,11 +38,9 @@ public abstract class SyncAgent extends Agent {
 
     }
 
-
-
     @Override
-    public void sendMessage(Message message) {
-
+    public void sendMessage(Message message){
+        syncMailer.addMessage(message);
     }
 
     @Override
@@ -52,8 +50,22 @@ public abstract class SyncAgent extends Agent {
 
     @Override
     public void execution() {
-
+        if (syncMailer.getPhase() == SyncMailer.PHASE_AGENT && !syncMailer.isDone(this.id)){
+            while (!messageQueue.isEmpty()){
+                disposeMessage(messageQueue.poll());
+            }
+            allMessageDisposed();
+            syncMailer.agentDone(this.id);
+            if (pendingValueIndex >= 0){
+                valueIndex = pendingValueIndex;
+                pendingValueIndex = -1;
+            }
+        }
     }
+
+    protected void allMessageDisposed(){
+
+    };
 
     @Override
     public void preExecution() {
@@ -62,7 +74,6 @@ public abstract class SyncAgent extends Agent {
 
     @Override
     protected void initRun() {
-
     }
 
     public void addMessage(Message message){

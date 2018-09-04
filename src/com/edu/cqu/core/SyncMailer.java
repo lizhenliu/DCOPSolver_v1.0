@@ -127,6 +127,15 @@ public class SyncMailer extends Process {
         }
     }
 
+    public void addMessage(Message message) {
+        synchronized (phase){
+            while (phase.get() == PHASE_MAILER);
+            synchronized (messageQueue){
+                messageQueue.add(message);
+            }
+        }
+    }
+
     private void expand() {
         double[] tmpCostInCycle = new double[costInCycle.length*2];
         double[] tmpBestCostInCycle = new double[bestCostInCycle.length*2];
