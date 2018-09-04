@@ -144,4 +144,7 @@ public abstract class ALSAgent extends BFSSyncAgent {
         }
     }
 
+    public double[] getBestCostInCycle() {
+        return bestCostInCycle;
+    }
 }

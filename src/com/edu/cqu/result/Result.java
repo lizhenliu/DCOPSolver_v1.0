@@ -272,6 +272,10 @@ public class Result {
         this.totalTime = totalTime;
     }
 
+    public Set<Integer> getAgents(){
+        return agentValues.keySet();
+    }
+
     public int getNcccs() {
         return ncccs;
     }

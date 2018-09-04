@@ -14,6 +14,8 @@ public abstract class Agent extends Process {
     protected int valueIndex;
     protected int localCost;
 
+    public int ncccs;
+
     public Agent(int id,int[]domain,int[]neighbors,Map<Integer,int[][]> constraintCosts,Map<Integer,int[]> neighborDomains) {
         super("Agent: " +id);
         this.id = id;
@@ -33,7 +35,7 @@ public abstract class Agent extends Process {
         postInit();
     }
 
-    private void postInit() {
+    protected void postInit() {
     }
 
     protected abstract void initRun();

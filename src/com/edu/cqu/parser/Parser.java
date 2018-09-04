@@ -14,7 +14,7 @@ public class Parser {
     protected Map<String,int[]> domains;
     protected Map<String,Integer> agentNameId;
     protected Map<String,AgentPair> constraintInfo;
-    protected Map<String,Integer> variableNameAentId;
+    protected Map<String,Integer> variableNameAgentId;
 
     public Parser(Element rootElement, Problem problem) {
         this.rootElement  = rootElement;
@@ -22,7 +22,7 @@ public class Parser {
         domains = new HashMap<>();
         agentNameId = new HashMap<>();
         constraintInfo = new HashMap<>();
-        variableNameAentId = new HashMap<>();
+        variableNameAgentId = new HashMap<>();
     }
 
     public void parserContent() {
@@ -82,7 +82,7 @@ public class Parser {
             String domain = variableElement.getAttributeValue("domain");
             String agentName = variableElement.getAttributeValue("agent");
             String name = variableElement.getAttributeValue("name");
-            variableNameAentId.put(name,agentNameId.get(agentName));
+            variableNameAgentId.put(name,agentNameId.get(agentName));
             problem.domains.put(agentNameId.get(agentName),domains.get(domain));
         }
 
@@ -120,8 +120,8 @@ public class Parser {
             if (ids.length != 2){
                 throw new IllegalArgumentException();
             }
-            former = variableNameAentId.get(ids[0]);
-            latter = variableNameAentId.get(ids[1]);
+            former = variableNameAgentId.get(ids[0]);
+            latter = variableNameAgentId.get(ids[1]);
         }
     }
 }

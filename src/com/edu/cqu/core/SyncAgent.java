@@ -7,7 +7,8 @@ import java.util.Queue;
 public abstract class SyncAgent extends Agent {
 
     private Queue<Message> messageQueue;
-    private SyncMailer syncMailer;
+    protected SyncMailer syncMailer;
+    private int pendingValueIndex;
 
     public SyncAgent(int id, int[] domain, int[] neighbours, Map<Integer, int[][]> constraintCosts, Map<Integer, int[]> neighbourDomains, SyncMailer mailer) {
         super(id, domain, neighbours, constraintCosts, neighbourDomains);
@@ -15,6 +16,16 @@ public abstract class SyncAgent extends Agent {
         this.syncMailer = syncMailer;
         messageQueue = new LinkedList<>();
         syncMailer.register(this);
+        pendingValueIndex = -1;
+    }
+
+    public void assignmentValueIndex(int pendingValueIndex){
+        this.pendingValueIndex = pendingValueIndex;
+    }
+
+    @Override
+    protected void postInit() {
+        super.postInit();
     }
 
     @Override
@@ -53,4 +64,8 @@ public abstract class SyncAgent extends Agent {
     protected void initRun() {
 
     }
+
+    public void addMessage(Message message){
+        messageQueue.add(message);
+    };
 }
