@@ -151,4 +151,16 @@ public class DFSSyncAgent extends SyncAgent {
             }
             }
     }
+
+    public String toDOTString(){
+        StringBuilder stringBuilder = new StringBuilder();
+        if (parent > 0){
+            stringBuilder.append("X" + parent + "->X" + id + ";\n");
+        }
+        for (int pp : pseudoParent){
+            stringBuilder.append("X" + pp + "->X" + id + " [style=dotted];\n");
+        }
+        return stringBuilder.toString();
+    }
+
 }

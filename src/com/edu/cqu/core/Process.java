@@ -6,6 +6,7 @@ public abstract class Process extends Thread {
     private Thread thread;
     private String threadName;
     private AtomicBoolean isRunning;
+    private boolean suppressOutput;
 
     public Process(String threadName) {
         this.threadName = threadName;
@@ -56,4 +57,7 @@ public abstract class Process extends Thread {
         return isRunning.get();
     }
 
+    public void setSuppressOutput(boolean suppressOutput) {
+        this.suppressOutput = suppressOutput;
+    }
 }

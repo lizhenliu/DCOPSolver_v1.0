@@ -203,6 +203,10 @@ public class SyncMailer extends Process {
         return phase.get();
     }
 
+    public void registerAgentIteratedOverListener(AgentIteratedOverListener listener) {
+        agentIteratedOverListeners.add(listener);
+    }
+
     public interface CycleListener{
         void onCycleChanged(int cycle);
     }
