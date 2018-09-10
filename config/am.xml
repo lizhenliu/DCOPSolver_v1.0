@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+    <agents>
+        <agent name="SBB" class="edu.cqu.algorithms.sbb.SBBAgent" method="SYNC"/>
+        <agent name="TreeBB" class="edu.cqu.algorithms.treebb.TreeBBAgent" method="SYNC"/>
+        <agent name="MGM" class="edu.cqu.algorithms.mgm.MGMAgent" method="SYNC"/>
+        <agent name="MGMals" class="edu.cqu.algorithms.mgm.MGMAlsAgent" method="SYNC"/>
+        <agent name="MGM2" class="edu.cqu.algorithms.mgm.MGM2Agent" method="SYNC"/>
+        <agent name="Maxsum" class="edu.cqu.algorithms.maxsum.MaxsumAgent" method="SYNC"/>
+        <agent name="MaxsumAls" class="edu.cqu.algorithms.maxsum.MaxsumAlsAgent" method="SYNC"/>
+        <agent name="MaxsumAD" class="edu.cqu.algorithms.maxsum.advp.MaxsumADAgent" method="SYNC"/>
+        <agent name="MaxsumADAls" class="edu.cqu.algorithms.maxsum.advp.MaxsumADAlsAgent" method="SYNC"/>
+        <agent name="MaxsumADSSVP" class="edu.cqu.algorithms.maxsum.adssvp.MaxsumADSSVPAgent" method="SYNC"/>
+        <agent name="MaxsumADSSVPAls" class="edu.cqu.algorithms.maxsum.adssvp.MaxsumADSSVPAlsAgent" method="SYNC"/>
+        <agent name="MaxsumHBVP" class="edu.cqu.algorithms.maxsum.hbvp.MaxsumHBVPAgent" method="SYNC"/>
+        <agent name="MaxsumHBVPAls" class="edu.cqu.algorithms.maxsum.hbvp.MaxsumHBVPAlsAgent" method="SYNC"/>
+        <agent name="PDS" class="edu.cqu.algorithms.newpds.PDSAls" method="SYNC"/>
+        <agent name="PDSK" class="edu.cqu.algorithms.newpds.Multi_K_PDSAls" method="SYNC"/>
+        <agent name="PDSPK" class="edu.cqu.algorithms.newpds.PureTriggerPDS" method="SYNC"/>
+        <agent name="PDSS" class="edu.cqu.algorithms.newpds.SetTriggerPDS" method="SYNC"/>
+        <agent name="ACO" class="edu.cqu.algorithms.aco.ACOAgent" method="SYNC"/>
+        <agent name="DPOP" class="edu.cqu.algorithms.dpop.DPOP" method="SYNC"/>
+        <agent name="Maxsumpvp" class="edu.cqu.algorithms.maxsum.pvp.MaxsumPVPAgent" method="SYNC"/>
+        <agent name="MaxsumpvpAls" class="edu.cqu.algorithms.maxsum.pvp.MaxsumPVPAlsAgent" method="SYNC"/>
+        <agent name="DSAR" class="edu.cqu.algorithms.dsa.DSAReductedAgent" method="SYNC"/>
+        <agent name="DSA" class="edu.cqu.algorithms.dsa.DSAAgent" method="SYNC"/>
+        <agent name="MaxsumADSSVPLS" class="edu.cqu.algorithms.maxsum.adssvp.MaxsumADSSVPWithLocalSearchAgent" method="SYNC"/>
+        <agent name="MaxsumADSSVPLSAls" class="edu.cqu.algorithms.maxsum.adssvp.MaxsumADSSVPWithLocalSearchAlsAgent" method="SYNC"/>
+        <agent name="MaxsumDamping" class="edu.cqu.algorithms.maxsum.damping.MaxsumDampingAgent" method="SYNC"/>
+        <agent name="MaxsumDampingAls" class="edu.cqu.algorithms.maxsum.damping.MaxsumDampingAlsAgent" method="SYNC"/>
+        <agent name="MaxsumADKDAls" class="edu.cqu.algorithms.maxsum.advp.MaxsumADKDAlsAgent" method="SYNC"/>
+        <agent name="MaxsumADMPAls" class="edu.cqu.algorithms.maxsum.advp.MaxsumADMPAlsAgent" method="SYNC"/>
+        <agent name="MLS" class="edu.cqu.algorithms.sampling.MLSAgent" method="SYNC"/>
+        <agent name="DGibbs" class="edu.cqu.algorithm.DGibbs" method="SYNC"/>
+        <agent name="ACODFS" class="edu.cqu.algorithm.aco.ACODFS" method="SYNC"/>
+        <agent name="ACODFSREGRET" class="edu.cqu.algorithm.acoRegret.ACODFSREGRET" method="SYNC"/>
+        <agent name="RM" class="edu.cqu.algorithm.acoRegret.ACODFSREGRET" method="SYNC"/>
+        <agent name="MaxsumRed" class="edu.cqu.algorithm.RM" method="SYNC"/>
+    </agents>
+    <configurations>
+        <configuration name="printCycle" value="true"/>
+        <configuration name="suppressOutput" value="true"/>
+    </configurations>
+</manifest>
