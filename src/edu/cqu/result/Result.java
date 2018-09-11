@@ -306,4 +306,7 @@ public class Result {
         this.cycleOffset = cycleOffset;
     }
 
+    public void setAgentValues(int agentId,int agentValue){
+        agentValues.put(agentId,agentValue);
+    }
 }

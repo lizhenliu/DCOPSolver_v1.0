@@ -41,4 +41,10 @@ public abstract class AsyncAgent extends Agent {
     public void execution() {
 
     }
+
+    public void addMessage(Message message) {
+        synchronized (messageQueue){
+            messageQueue.add(message);
+        }
+    }
 }

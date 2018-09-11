@@ -3,6 +3,8 @@ package edu.cqu.algorithms.dsa;
 import edu.cqu.core.Message;
 import edu.cqu.core.SyncAgent;
 import edu.cqu.core.SyncMailer;
+import edu.cqu.result.ResultCycle;
+
 import java.util.Map;
 
 public class DSAAgent extends SyncAgent {
@@ -18,11 +20,17 @@ public class DSAAgent extends SyncAgent {
 
     @Override
     protected void initRun() {
-        super.initRun();
         valueIndex = (int) (Math.random()*domain.length);
         localCost  = Integer.MAX_VALUE;
         valueCount = 0;
         sendValueMessage(valueIndex);
+    }
+
+    @Override
+    protected void runFinished() {
+        ResultCycle resultCycle = new ResultCycle();
+        resultCycle.setAgentValues(id,valueIndex);
+        mailer.setResultCycle(id,resultCycle);
     }
 
     private void sendValueMessage(int value) {
@@ -34,7 +42,6 @@ public class DSAAgent extends SyncAgent {
 
     @Override
     public void disposeMessage(Message message) {
-        super.disposeMessage(message);
         switch (message.getMsgType()){
             case MSG_TYPE_VALUE:
                 disposeValueMessage(message);

@@ -6,7 +6,7 @@ import edu.cqu.core.SyncMailer;
 
 import java.util.*;
 
-public class BFSSyncAgent extends SyncAgent {
+public abstract class BFSSyncAgent extends SyncAgent {
 
     public static final int MSG_TYPE_LAYER = 0XFFFBF0;
     public static final int MSG_TYPE_ACK = 0XFFFBF1;
@@ -33,7 +33,6 @@ public class BFSSyncAgent extends SyncAgent {
 
     @Override
     protected void initRun() {
-        super.initRun();
         level = Integer.MAX_VALUE;
         if (this.id == 1){
             level = 0;
@@ -61,7 +60,6 @@ public class BFSSyncAgent extends SyncAgent {
 
     @Override
     public void disposeMessage(Message message) {
-        super.disposeMessage(message);
         switch (message.getMsgType()){
             case MSG_TYPE_LAYER:
                 disposeLayerMessage(message);

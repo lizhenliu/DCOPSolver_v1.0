@@ -7,15 +7,14 @@ import java.util.Queue;
 public abstract class SyncAgent extends Agent {
 
     private Queue<Message> messageQueue;
-    protected SyncMailer syncMailer;
+    protected SyncMailer mailer;
     private int pendingValueIndex;
 
     public SyncAgent(int id, int[] domain, int[] neighbours, Map<Integer, int[][]> constraintCosts, Map<Integer, int[]> neighbourDomains, SyncMailer mailer) {
         super(id, domain, neighbours, constraintCosts, neighbourDomains);
-        this.messageQueue = messageQueue;
-        this.syncMailer = syncMailer;
+        this.mailer = mailer;
         messageQueue = new LinkedList<>();
-        syncMailer.register(this);
+        mailer.register(this);
         pendingValueIndex = -1;
     }
 
@@ -26,36 +25,22 @@ public abstract class SyncAgent extends Agent {
     @Override
     protected void postInit() {
         super.postInit();
-    }
-
-    @Override
-    public void postExecution() {
-
-    }
-
-    @Override
-    protected void runFinished() {
-
+        mailer.agentDone(this.id);
     }
 
     @Override
     public void sendMessage(Message message){
-        syncMailer.addMessage(message);
-    }
-
-    @Override
-    public void disposeMessage(Message message) {
-
+        mailer.addMessage(message);
     }
 
     @Override
     public void execution() {
-        if (syncMailer.getPhase() == SyncMailer.PHASE_AGENT && !syncMailer.isDone(this.id)){
+        if (mailer.getPhase() == SyncMailer.PHASE_AGENT && !mailer.isDone(this.id)){
             while (!messageQueue.isEmpty()){
                 disposeMessage(messageQueue.poll());
             }
             allMessageDisposed();
-            syncMailer.agentDone(this.id);
+            mailer.agentDone(this.id);
             if (pendingValueIndex >= 0){
                 valueIndex = pendingValueIndex;
                 pendingValueIndex = -1;
@@ -66,15 +51,6 @@ public abstract class SyncAgent extends Agent {
     protected void allMessageDisposed(){
 
     };
-
-    @Override
-    public void preExecution() {
-
-    }
-
-    @Override
-    protected void initRun() {
-    }
 
     public void addMessage(Message message){
         messageQueue.add(message);

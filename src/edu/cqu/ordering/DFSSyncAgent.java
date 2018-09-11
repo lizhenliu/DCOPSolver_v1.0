@@ -6,7 +6,7 @@ import edu.cqu.core.SyncMailer;
 
 import java.util.*;
 
-public class DFSSyncAgent extends SyncAgent {
+public abstract class DFSSyncAgent extends SyncAgent {
 
     public static final int MSG_TYPE_DFS_LAYER = 0XFFFDF0;
     public static final int MSG_TYPE_DFS_BACKTRACK = 0XFFFDF1;
@@ -33,7 +33,6 @@ public class DFSSyncAgent extends SyncAgent {
 
     @Override
     protected void initRun() {
-        super.initRun();
         level = Integer.MAX_VALUE;
         child = -1;
         parent = -1;
@@ -57,7 +56,6 @@ public class DFSSyncAgent extends SyncAgent {
 
     @Override
     public void disposeMessage(Message message) {
-        super.disposeMessage(message);
         switch (message.getMsgType()){
             case MSG_TYPE_DFS_LAYER:
                 disposeLayerMessage(message);
