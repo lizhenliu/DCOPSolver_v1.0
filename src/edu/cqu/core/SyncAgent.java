@@ -48,9 +48,7 @@ public abstract class SyncAgent extends Agent {
         }
     }
 
-    protected void allMessageDisposed(){
-
-    };
+    protected void allMessageDisposed(){};
 
     public void addMessage(Message message){
         messageQueue.add(message);

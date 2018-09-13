@@ -2,6 +2,7 @@ package edu.cqu.core;
 
 import edu.cqu.framework.ALSAgent;
 import edu.cqu.result.ResultCycle;
+import edu.cqu.result.annotations.NotRecordCostInCycle;
 
 import java.util.*;
 import java.util.concurrent.atomic.AtomicInteger;
@@ -33,7 +34,7 @@ public class SyncMailer extends Process {
     private boolean recordCostInCycle;
 
     public SyncMailer() {
-        super("syncMailer");
+        super("mailer");
         agents = new HashMap<>();
         messageQueue = new LinkedList<>();
         agentReady = new HashSet<>();
@@ -113,9 +114,6 @@ public class SyncMailer extends Process {
                 for (AgentIteratedOverListener listener:agentIteratedOverListeners) {
                     listener.agentIteratedOver(agents);
                 }
-                if (printCycle){
-                    System.out.println("cycle " + tail);
-                }
                 if (canTerminate){
                     stopProcess();
                 }else {
@@ -156,8 +154,11 @@ public class SyncMailer extends Process {
         startTime = new Date().getTime();
     }
 
-    public void register(SyncAgent syncAgent) {
-        agents.put(syncAgent.id,syncAgent);
+    public void register(SyncAgent agent){
+        if (recordCostInCycle){
+            recordCostInCycle = !agent.getClass().isAnnotationPresent(NotRecordCostInCycle.class);
+        }
+        agents.put(agent.id,agent);
     }
 
     public synchronized void agentDone(int id){

@@ -58,4 +58,41 @@ public abstract class Agent extends Process {
         return sumCost;
     }
 
+    protected int updateLocalView(int neighbourId,int valueIndex){
+        return localView.put(neighbourId,valueIndex);
+    }
+
+    protected int getNeighbourValue(int neighbourId){
+        return localView.get(neighbourId);
+    }
+
+    public static String array2String(int[] arr){
+        StringBuilder stringBuilder = new StringBuilder();
+        stringBuilder.append("[");
+        for (int i = 0; i < arr.length; i++){
+            if (i != arr.length - 1){
+                stringBuilder.append(arr[i] + ",");
+            }
+            else {
+                stringBuilder.append(arr[i] + "]");
+            }
+        }
+        return stringBuilder.toString();
+    }
+
+    public static String map2String(Map map){
+        return map2String(map,null,null);
+    }
+
+    public static String map2String(Map map, Stringifier keyStringifier, Stringifier valueStringifier){
+        StringBuilder stringBuilder = new StringBuilder();
+        for (Object key : map.keySet()){
+            String keyString = keyStringifier == null ? key.toString() : keyStringifier.stringify(key);
+            String valueString = valueStringifier == null ? map.get(key).toString() : valueStringifier.stringify(map.get(key));
+            stringBuilder.append(keyString + "=" + valueString + "\n");
+        }
+        return stringBuilder.toString();
+    }
+
+
 }

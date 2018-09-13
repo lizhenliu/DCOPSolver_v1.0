@@ -11,6 +11,7 @@ public abstract class Process extends Thread {
     public Process(String threadName) {
         this.threadName = threadName;
         isRunning = new AtomicBoolean(false);
+        suppressOutput = false;
     }
 
     public void startProcess(){
@@ -26,14 +27,16 @@ public abstract class Process extends Thread {
                 preExecution();
                 while (true){
                     synchronized (isRunning){
-                        if (isRunning.get()){
+                        if (!isRunning.get()){
                             break;
                         }
                     }
                     execution();
                 }
                 postExecution();
-                System.out.println(threadName + "is stopped!");
+                if (!suppressOutput){
+                    System.out.println(threadName + " is stopped");
+                }
             }
         },threadName);
         thread.start();

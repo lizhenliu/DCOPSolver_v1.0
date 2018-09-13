@@ -2,25 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6e7212df-26d5-426a-b162-c117bdc6decd" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/src/edu/cqu/core/Stringifier.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/DCOPSolver/edu/cqu/algorithms/dsa/DSAAgent.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DCOPSolver/edu/cqu/algorithms/dsa/DSAAgent.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DCOPSolver/edu/cqu/core/Agent.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DCOPSolver/edu/cqu/core/Agent.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/DCOPSolver/edu/cqu/core/AgentManager$ShowPesudoTreeGraph.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DCOPSolver/edu/cqu/core/AgentManager$ShowPesudoTreeGraph.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/DCOPSolver/edu/cqu/core/AgentManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DCOPSolver/edu/cqu/core/AgentManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DCOPSolver/edu/cqu/core/AsyncAgent.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DCOPSolver/edu/cqu/core/AsyncAgent.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DCOPSolver/edu/cqu/core/AsyncMailer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DCOPSolver/edu/cqu/core/AsyncMailer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DCOPSolver/edu/cqu/core/Process$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DCOPSolver/edu/cqu/core/Process$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DCOPSolver/edu/cqu/core/Process.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DCOPSolver/edu/cqu/core/Process.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/DCOPSolver/edu/cqu/core/SyncAgent.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DCOPSolver/edu/cqu/core/SyncAgent.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DCOPSolver/edu/cqu/main/DSATest$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DCOPSolver/edu/cqu/main/DSATest$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DCOPSolver/edu/cqu/main/DSATest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DCOPSolver/edu/cqu/main/DSATest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DCOPSolver/edu/cqu/ordering/BFSSyncAgent.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DCOPSolver/edu/cqu/ordering/BFSSyncAgent.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DCOPSolver/edu/cqu/ordering/DFSSyncAgent.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DCOPSolver/edu/cqu/ordering/DFSSyncAgent.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DCOPSolver/edu/cqu/core/SyncMailer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DCOPSolver/edu/cqu/core/SyncMailer.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/edu/cqu/algorithms/dsa/DSAAgent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/cqu/algorithms/dsa/DSAAgent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/edu/cqu/core/Agent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/cqu/core/Agent.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/edu/cqu/core/AgentManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/cqu/core/AgentManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/cqu/core/AsyncAgent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/cqu/core/AsyncAgent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/cqu/core/AsyncMailer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/cqu/core/AsyncMailer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/edu/cqu/core/Process.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/cqu/core/Process.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/edu/cqu/core/SyncAgent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/cqu/core/SyncAgent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/cqu/ordering/BFSSyncAgent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/cqu/ordering/BFSSyncAgent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/cqu/ordering/DFSSyncAgent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/cqu/ordering/DFSSyncAgent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/cqu/result/Result.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/cqu/result/Result.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/edu/cqu/core/SyncMailer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/cqu/core/SyncMailer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/edu/cqu/parser/AgentsParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/cqu/parser/AgentsParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/edu/cqu/result/ResultCycle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/cqu/result/ResultCycle.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -32,11 +31,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="DSATest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/edu/cqu/main/DSATest.java">
+      <file leaf-file-name="AgentManager.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/edu/cqu/core/AgentManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="208">
-              <caret line="12" column="29" lean-forward="true" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
+            <state relative-caret-position="754">
+              <caret line="32" column="83" selection-start-line="32" selection-start-column="83" selection-end-line="32" selection-end-column="83" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -44,11 +43,29 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="AgentsParser.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/edu/cqu/parser/AgentsParser.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-650">
+              <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AsyncAgent.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/edu/cqu/core/AsyncAgent.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="650">
+              <caret line="42" column="5" lean-forward="true" selection-start-line="42" selection-start-column="5" selection-end-line="42" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="AsyncMailer.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/edu/cqu/core/AsyncMailer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="222">
-              <caret line="62" column="32" selection-start-line="62" selection-start-column="32" selection-end-line="62" selection-end-column="32" />
+            <state relative-caret-position="364">
+              <caret line="66" lean-forward="true" selection-start-line="66" selection-end-line="66" />
               <folding>
                 <element signature="e#1896#1897#0" expanded="true" />
                 <element signature="e#1944#1945#0" expanded="true" />
@@ -57,11 +74,62 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Solver.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/edu/cqu/core/Solver.java">
+      <file leaf-file-name="SyncMailer.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/edu/cqu/core/SyncMailer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="155">
-              <caret line="156" column="33" selection-start-line="156" selection-start-column="33" selection-end-line="156" selection-end-column="33" />
+            <state relative-caret-position="7">
+              <caret line="100" column="36" selection-start-line="100" selection-start-column="36" selection-end-line="100" selection-end-column="36" />
+              <folding>
+                <element signature="e#5924#5925#0" expanded="true" />
+                <element signature="e#5970#5971#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SyncAgent.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/edu/cqu/core/SyncAgent.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="260">
+              <caret line="10" column="7" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#926#927#0" expanded="true" />
+                <element signature="e#968#969#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DSATest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/edu/cqu/main/DSATest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="182">
+              <caret line="13" column="53" selection-start-line="13" selection-start-column="53" selection-end-line="13" selection-end-column="53" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ResultCycle.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/edu/cqu/result/ResultCycle.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="312">
+              <caret line="14" column="40" lean-forward="true" selection-start-line="14" selection-start-column="40" selection-end-line="14" selection-end-column="40" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DSAAgent.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/edu/cqu/algorithms/dsa/DSAAgent.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="26">
+              <caret line="13" column="44" selection-start-line="13" selection-start-column="44" selection-end-line="13" selection-end-column="44" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -69,66 +137,13 @@
       <file leaf-file-name="Result.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/edu/cqu/result/Result.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="6685">
-              <caret line="310" column="5" selection-start-line="310" selection-start-column="5" selection-end-line="310" selection-end-column="5" />
+            <state relative-caret-position="294">
+              <caret line="308" column="16" selection-start-line="308" selection-start-column="16" selection-end-line="308" selection-end-column="16" />
               <folding>
+                <element signature="imports" expanded="true" />
                 <element signature="e#12487#12488#0" expanded="true" />
                 <element signature="e#12538#12539#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AgentManager.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/edu/cqu/core/AgentManager.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1356">
-              <caret line="24" column="102" selection-start-line="24" selection-start-column="102" selection-end-line="24" selection-end-column="102" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Agent.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/edu/cqu/core/Agent.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="839">
-              <caret line="40" column="28" selection-start-line="40" selection-start-column="28" selection-end-line="40" selection-end-column="28" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DSAAgent.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/edu/cqu/algorithms/dsa/DSAAgent.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="237">
-              <caret line="31" column="26" lean-forward="true" selection-start-line="31" selection-start-column="26" selection-end-line="31" selection-end-column="26" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BFSSyncAgent.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/edu/cqu/ordering/BFSSyncAgent.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1014">
-              <caret line="61" column="49" selection-start-line="61" selection-start-column="49" selection-end-line="61" selection-end-column="49" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FinishedListener.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/edu/cqu/core/FinishedListener.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="130">
-              <caret line="5" column="9" selection-start-line="5" selection-start-column="9" selection-end-line="5" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -152,6 +167,23 @@
       <find>pre</find>
       <find>add</find>
       <find>addMessage</find>
+      <find>cycleOffset</find>
+      <find>refts</find>
+      <find>public void execution() {</find>
+      <find>size</find>
+      <find>neighborValue: -1</find>
+      <find>cycleCount: 2</find>
+      <find>receivedValue:</find>
+      <find>cycleCount</find>
+      <find>-1</find>
+      <find>Agent: 28</find>
+      <find>Agent: 13</find>
+      <find>RRRRRRRRRRRRRR: -1</find>
+      <find>costInCycle</find>
+      <find>cycle</find>
+      <find>print</find>
+      <find>println</find>
+      <find>2</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -160,11 +192,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/com/edu.java" />
-        <option value="$PROJECT_DIR$/src/edu/test.java" />
-        <option value="$PROJECT_DIR$/src/com/edu/te.java" />
-        <option value="$PROJECT_DIR$/src/com/edu/cqu/util/DialogUtil.java" />
-        <option value="$PROJECT_DIR$/src/com/edu/cqu/parser/DialogUtil.java" />
         <option value="$PROJECT_DIR$/src/com/edu/cqu/benchmark/dcop/randomDCOPs/RandomDCOPsGenerator.java" />
         <option value="$PROJECT_DIR$/src/com/edu/cqu/benchmark/dcop/coloringGraph/ColoringGraphGenerator.java" />
         <option value="$PROJECT_DIR$/src/com/edu/cqu/benchmark/dcop/coloringGraph/WeightedColoringGraphGenerator.java" />
@@ -202,15 +229,20 @@
         <option value="$PROJECT_DIR$/src/com/edu/cqu/core/SyncMailer.java" />
         <option value="$PROJECT_DIR$/src/com/edu/cqu/main/DSATest.java" />
         <option value="$PROJECT_DIR$/src/com/edu/cqu/core/Solver.java" />
-        <option value="$PROJECT_DIR$/src/edu/cqu/core/AgentManager.java" />
         <option value="$PROJECT_DIR$/src/edu/cqu/core/AsyncMailer.java" />
         <option value="$PROJECT_DIR$/src/edu/cqu/core/AsyncAgent.java" />
-        <option value="$PROJECT_DIR$/src/edu/cqu/core/SyncAgent.java" />
         <option value="$PROJECT_DIR$/src/edu/cqu/ordering/BFSSyncAgent.java" />
         <option value="$PROJECT_DIR$/src/edu/cqu/ordering/DFSSyncAgent.java" />
-        <option value="$PROJECT_DIR$/src/edu/cqu/main/DSATest.java" />
-        <option value="$PROJECT_DIR$/src/edu/cqu/algorithms/dsa/DSAAgent.java" />
         <option value="$PROJECT_DIR$/src/edu/cqu/result/Result.java" />
+        <option value="$PROJECT_DIR$/src/edu/cqu/core/Process.java" />
+        <option value="$PROJECT_DIR$/src/edu/cqu/core/SyncAgent.java" />
+        <option value="$PROJECT_DIR$/src/edu/cqu/core/Agent.java" />
+        <option value="$PROJECT_DIR$/src/edu/cqu/core/AgentManager.java" />
+        <option value="$PROJECT_DIR$/src/edu/cqu/main/DSATest.java" />
+        <option value="$PROJECT_DIR$/src/edu/cqu/result/ResultCycle.java" />
+        <option value="$PROJECT_DIR$/src/edu/cqu/parser/AgentsParser.java" />
+        <option value="$PROJECT_DIR$/src/edu/cqu/core/SyncMailer.java" />
+        <option value="$PROJECT_DIR$/src/edu/cqu/algorithms/dsa/DSAAgent.java" />
       </list>
     </option>
   </component>
@@ -224,10 +256,10 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="676" />
-    <option name="y" value="118" />
-    <option name="width" value="1112" />
-    <option name="height" value="906" />
+    <option name="x" value="37" />
+    <option name="y" value="145" />
+    <option name="width" value="1083" />
+    <option name="height" value="711" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -237,7 +269,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="AndroidView" />
       <pane id="ProjectPane">
@@ -321,10 +352,27 @@
               <item name="cqu" type="462c0819:PsiDirectoryNode" />
               <item name="ordering" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="DCOPSolver" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DCOPSolver" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="edu" type="462c0819:PsiDirectoryNode" />
+              <item name="cqu" type="462c0819:PsiDirectoryNode" />
+              <item name="parser" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DCOPSolver" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DCOPSolver" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="edu" type="462c0819:PsiDirectoryNode" />
+              <item name="cqu" type="462c0819:PsiDirectoryNode" />
+              <item name="result" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -345,17 +393,20 @@
     <key name="CreateTestDialog.RecentsKey">
       <recent name="com.edu.cqu.core" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\DCOP\DCOPSolver\src\com\edu\cqu\benchmark\dcop" />
-      <recent name="E:\DCOP\DCOPSolver\src\com\edu\cqu\benchmark" />
-      <recent name="E:\DCOP\DCOPSolver\src\com\edu\cqu\benchmark\randomdcops" />
-    </key>
-    <key name="CreateTestDialog.Recents.Supers">
-      <recent name="" />
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="edu.cqu.core" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\DCOP\DCOPSolver\src\com\edu\cqu" />
       <recent name="E:\DCOP\DCOPSolver\src\com\edu" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\DCOP\DCOPSolver\src\com\edu\cqu\benchmark\dcop" />
+      <recent name="E:\DCOP\DCOPSolver\src\com\edu\cqu\benchmark" />
+      <recent name="E:\DCOP\DCOPSolver\src\com\edu\cqu\benchmark\randomdcops" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -506,14 +557,21 @@
       <workItem from="1536215419828" duration="888000" />
       <workItem from="1536586195951" duration="376000" />
       <workItem from="1536632900274" duration="4498000" />
+      <workItem from="1536649031393" duration="2469000" />
+      <workItem from="1536652104079" duration="3389000" />
+      <workItem from="1536656584400" duration="11000" />
+      <workItem from="1536656614085" duration="3542000" />
+      <workItem from="1536806939128" duration="1729000" />
+      <workItem from="1536817939227" duration="10748000" />
+      <workItem from="1536839960506" duration="5397000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="104012000" />
+    <option name="totallyTimeSpent" value="131297000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="451" y="79" width="741" height="604" extended-state="0" />
+    <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
@@ -525,19 +583,19 @@
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.0" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.5025554" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.0" />
       <window_info anchor="right" id="Database" order="3" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.12903225" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.6286201" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
       <window_info anchor="right" id="Theme Preview" order="3" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.0" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -554,42 +612,10 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="1" />
+      <option name="time" value="20" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/edu/cqu/benchmark/dcop/Contentwriter.java" />
-    <entry file="file://$PROJECT_DIR$/src/edu/cqu/framework/MALSAgent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="962">
-          <caret line="37" column="20" selection-start-line="37" selection-start-column="20" selection-end-line="37" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/edu/cqu/result/ResultCycle.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="233">
-          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/edu/cqu/utils/FileUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="78">
-          <caret line="3" column="1" lean-forward="true" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/edu/cqu/result/annotations/CycleLength.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="52">
-          <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/edu/cqu/result/annotations/CycleOffset.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="52">
@@ -674,13 +700,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/edu/cqu/result/ResultAls.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="52">
-          <caret line="2" selection-start-line="2" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/edu/cqu/algorithms/dsa.java" />
     <entry file="file://$PROJECT_DIR$/src/edu/cqu/parser/DialogUtil.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -693,13 +712,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="728">
           <caret line="34" column="21" selection-start-line="34" selection-start-column="21" selection-end-line="34" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/edu/cqu/parser/ProblemParser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="26">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -725,13 +737,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/edu/cqu/core/SyncAgent.java" />
     <entry file="file://$PROJECT_DIR$/src/com/edu/cqu/core/Agent.java" />
-    <entry file="file://$PROJECT_DIR$/src/edu/cqu/parser/AgentsParser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1222">
-          <caret line="58" column="5" selection-start-line="58" selection-start-column="5" selection-end-line="58" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/edu/cqu/gui/DOTrenderer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="104">
@@ -774,71 +779,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/edu/cqu/core/AsyncAgent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169">
-          <caret line="42" column="5" lean-forward="true" selection-start-line="42" selection-start-column="5" selection-end-line="42" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/edu/cqu/ordering/BFSSyncAgent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1014">
-          <caret line="61" column="49" selection-start-line="61" selection-start-column="49" selection-end-line="61" selection-end-column="49" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/edu/cqu/core/SyncAgent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="137">
-          <caret line="6" column="42" selection-start-line="6" selection-start-column="42" selection-end-line="6" selection-end-column="42" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/edu/cqu/core/AgentManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1356">
-          <caret line="24" column="102" selection-start-line="24" selection-start-column="102" selection-end-line="24" selection-end-column="102" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/edu/cqu/core/Agent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="839">
-          <caret line="40" column="28" selection-start-line="40" selection-start-column="28" selection-end-line="40" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/edu/cqu/algorithms/dsa/DSAAgent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="237">
-          <caret line="31" column="26" lean-forward="true" selection-start-line="31" selection-start-column="26" selection-end-line="31" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/edu/cqu/result/Result.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6685">
-          <caret line="310" column="5" selection-start-line="310" selection-start-column="5" selection-end-line="310" selection-end-column="5" />
-          <folding>
-            <element signature="e#12487#12488#0" expanded="true" />
-            <element signature="e#12538#12539#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/edu/cqu/ordering/DFSSyncAgent.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1469">
@@ -846,30 +786,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/edu/cqu/core/Solver.java">
+    <entry file="file://$PROJECT_DIR$/src/edu/cqu/ordering/BFSSyncAgent.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="155">
-          <caret line="156" column="33" selection-start-line="156" selection-start-column="33" selection-end-line="156" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/edu/cqu/main/DSATest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="12" column="29" lean-forward="true" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
+        <state relative-caret-position="1378">
+          <caret line="61" column="49" selection-start-line="61" selection-start-column="49" selection-end-line="61" selection-end-column="49" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/edu/cqu/core/AsyncMailer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="222">
-          <caret line="62" column="32" selection-start-line="62" selection-start-column="32" selection-end-line="62" selection-end-column="32" />
-          <folding>
-            <element signature="e#1896#1897#0" expanded="true" />
-            <element signature="e#1944#1945#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -878,6 +800,152 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="130">
           <caret line="5" column="9" selection-start-line="5" selection-start-column="9" selection-end-line="5" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/edu/cqu/parser/ProblemParser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="78">
+          <caret line="7" column="20" lean-forward="true" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/edu/cqu/core/Stringifier.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/edu/cqu/core/Solver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="21" column="95" lean-forward="true" selection-start-line="21" selection-start-column="95" selection-end-line="21" selection-end-column="95" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/edu/cqu/core/Agent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="211">
+          <caret line="57" column="23" lean-forward="true" selection-start-line="57" selection-start-column="23" selection-end-line="57" selection-end-column="23" />
+          <folding>
+            <element signature="e#1129#1130#0" expanded="true" />
+            <element signature="e#1158#1159#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/edu/cqu/core/Process.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="962">
+          <caret line="37" column="38" selection-start-line="37" selection-start-column="31" selection-end-line="37" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/edu/cqu/core/Problem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="11" column="58" selection-start-line="11" selection-start-column="58" selection-end-line="11" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/edu/cqu/result/ResultAls.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="52">
+          <caret line="2" selection-start-line="2" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/edu/cqu/core/AgentManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="754">
+          <caret line="32" column="83" selection-start-line="32" selection-start-column="83" selection-end-line="32" selection-end-column="83" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/edu/cqu/core/AsyncAgent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="650">
+          <caret line="42" column="5" lean-forward="true" selection-start-line="42" selection-start-column="5" selection-end-line="42" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/edu/cqu/parser/AgentsParser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-650">
+          <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/edu/cqu/core/SyncMailer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7">
+          <caret line="100" column="36" selection-start-line="100" selection-start-column="36" selection-end-line="100" selection-end-column="36" />
+          <folding>
+            <element signature="e#5924#5925#0" expanded="true" />
+            <element signature="e#5970#5971#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/edu/cqu/core/AsyncMailer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="364">
+          <caret line="66" lean-forward="true" selection-start-line="66" selection-end-line="66" />
+          <folding>
+            <element signature="e#1896#1897#0" expanded="true" />
+            <element signature="e#1944#1945#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/edu/cqu/core/SyncAgent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="10" column="7" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#926#927#0" expanded="true" />
+            <element signature="e#968#969#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/edu/cqu/result/ResultCycle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="14" column="40" lean-forward="true" selection-start-line="14" selection-start-column="40" selection-end-line="14" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/edu/cqu/main/DSATest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="13" column="53" selection-start-line="13" selection-start-column="53" selection-end-line="13" selection-end-column="53" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/edu/cqu/result/Result.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="308" column="16" selection-start-line="308" selection-start-column="16" selection-end-line="308" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#12487#12488#0" expanded="true" />
+            <element signature="e#12538#12539#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/edu/cqu/algorithms/dsa/DSAAgent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="26">
+          <caret line="13" column="44" selection-start-line="13" selection-start-column="44" selection-end-line="13" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

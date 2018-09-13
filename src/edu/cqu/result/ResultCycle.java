@@ -16,5 +16,4 @@ public class ResultCycle extends Result {
             this.costInCycle[i] = costInCycle[i];
         }
     }
-
 }

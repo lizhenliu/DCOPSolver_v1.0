@@ -21,7 +21,6 @@ public class AgentsParser {
     public Map<String,AgentDescriptor> parse() {
         Map<String,AgentDescriptor> map = new HashMap<>();
         try {
-            System.out.println("agentsPath: " + agentsPath);
             Element root = new SAXBuilder().build(new File(agentsPath)).getRootElement();
             List<Element> agentList = root.getChildren("agents").get(0).getChildren("agent");
             for (Element agentElement : agentList) {

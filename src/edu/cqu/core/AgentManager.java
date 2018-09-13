@@ -31,14 +31,11 @@ public class AgentManager {
         }
         Map<String,String> configurations = agentsParser.parseConfigurations();
         AgentDescriptor descriptor = agentDescriptors.get(agentType.toUpperCase());
-        System.out.println("agentName: " + descriptor.className);
         boolean suppressOutput = false;
         if (descriptor.method.equals(METHOD_ASYNC)){
             asyncMailer = new AsyncMailer(listener);
         }else {
             syncMailer = new SyncMailer(listener);
-            System.out.println("listener: " + listener);
-            System.out.println("syncMailer: " + syncMailer);
             if (showPesudoTreeGraph){
                 syncMailer.registerCycleListener(new ShowPesudoTreeGraph());
             }
@@ -58,10 +55,8 @@ public class AgentManager {
             try {
                 Class clazz = Class.forName(descriptor.className);
                 Constructor constructor = clazz.getConstructors()[0];
-                System.out.println("agent: " + syncMailer);
                 agent = (Agent) constructor.newInstance(id,problem.domains.get(id),problem.neighbors.get(id),problem.constraintCost.get(id),problem.getNeighborDomain(id),
                         syncMailer == null ? asyncMailer :syncMailer);
-
             }catch (Exception e){
                 throw new RuntimeException("init exception");
             }
