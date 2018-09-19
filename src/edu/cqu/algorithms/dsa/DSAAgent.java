@@ -85,12 +85,4 @@ public class DSAAgent extends SyncAgent {
         return value;
     }
 
-    private int calLocalCost(int value) {
-        int sumCost = 0;
-
-        for (int neighborId : neighbors) {
-            sumCost += constraintCosts.get(neighborId)[value][localView.get(neighborId)];
-        }
-        return sumCost;
-    }
 }

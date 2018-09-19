@@ -94,7 +94,7 @@ public class Contentwriter {
         HashMap<String,Object> paras = new HashMap<>();
         para.put("density",0.6);
         paras.put("m1",3);
-        String dir = "E:\\DCOP\\problems\\test\\";
+        String dir = "E:\\DCOP\\problems\\test1\\";
         String problemType = COLORING_GRAPH_PROBLEM;
         String problemTypes = SCALEFREE_PROBLEM;
         Contentwriter writer = new Contentwriter(dir,problemType,1,20,10,1,100,para);

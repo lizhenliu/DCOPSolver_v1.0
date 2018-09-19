@@ -58,6 +58,14 @@ public abstract class Agent extends Process {
         return sumCost;
     }
 
+    public int calLocalCost(int value){
+        int sumCost = 0;
+        for (int neighborId : neighbors) {
+            sumCost += constraintCosts.get(neighborId)[value][localView.get(neighborId)];
+        }
+        return sumCost;
+    }
+
     protected int updateLocalView(int neighbourId,int valueIndex){
         return localView.put(neighbourId,valueIndex);
     }
