@@ -2,19 +2,71 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6e7212df-26d5-426a-b162-c117bdc6decd" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/out/production/DCOPSolver/edu/cqu/algorithms/mgm/MGMAgent.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/cqu/algorithms/mgm/MGM2Agent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/cqu/algorithms/mgm/MGMAgent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/jCoCoA.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/edu/cqu/algorithms/coco/COCOAgent.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/am.xml" beforeDir="false" afterPath="$PROJECT_DIR$/config/am.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DCOPSolver/edu/cqu/algorithms/dsa/DSAAgent.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DCOPSolver/edu/cqu/algorithms/dsa/DSAAgent.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DCOPSolver/edu/cqu/algorithms/test.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DCOPSolver/edu/cqu/benchmark/dcop/Contentwriter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DCOPSolver/edu/cqu/benchmark/dcop/Contentwriter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DCOPSolver/edu/cqu/core/Agent.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DCOPSolver/edu/cqu/core/Agent.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/cqu/algorithms/dsa/DSAAgent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/cqu/algorithms/dsa/DSAAgent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/cqu/algorithms/test.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/cqu/benchmark/dcop/Contentwriter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/cqu/benchmark/dcop/Contentwriter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/cqu/core/Agent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/cqu/core/Agent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DCOPSolver.iml" beforeDir="false" afterPath="$PROJECT_DIR$/DCOPSolver.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DCOPSolver/edu/cqu/algorithms/dsa/DSAAgent.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DCOPSolver/edu/cqu/algorithms/mgm/MGMAgent.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DCOPSolver/edu/cqu/benchmark/dcop/AbstractGraph.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DCOPSolver/edu/cqu/benchmark/dcop/Contentwriter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DCOPSolver/edu/cqu/benchmark/dcop/coloringGraph/ColoringGraphGenerator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DCOPSolver/edu/cqu/benchmark/dcop/coloringGraph/WeightedColoringGraphGenerator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DCOPSolver/edu/cqu/benchmark/dcop/randomDCOPs/RandomDCOPsGenerator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DCOPSolver/edu/cqu/benchmark/dcop/scaleFreeNetWork/ScaleFreeNetWorkGenerator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DCOPSolver/edu/cqu/core/Agent.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DCOPSolver/edu/cqu/core/AgentDescriptor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DCOPSolver/edu/cqu/core/AgentIteratedOverListener.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DCOPSolver/edu/cqu/core/AgentManager$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DCOPSolver/edu/cqu/core/AgentManager$ShowPesudoTreeGraph.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DCOPSolver/edu/cqu/core/AgentManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DCOPSolver/edu/cqu/core/AsyncAgent.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DCOPSolver/edu/cqu/core/AsyncMailer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DCOPSolver/edu/cqu/core/CommunicationStructure.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DCOPSolver/edu/cqu/core/FinishedListener.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DCOPSolver/edu/cqu/core/Message.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DCOPSolver/edu/cqu/core/Problem.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DCOPSolver/edu/cqu/core/Process$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DCOPSolver/edu/cqu/core/Process.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DCOPSolver/edu/cqu/core/ProgressChangedListener.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DCOPSolver/edu/cqu/core/Solver$EachProblemFinishedListener.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DCOPSolver/edu/cqu/core/Solver$Monitor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DCOPSolver/edu/cqu/core/Solver.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DCOPSolver/edu/cqu/core/Stringifier.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DCOPSolver/edu/cqu/core/SyncAgent.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DCOPSolver/edu/cqu/core/SyncMailer$CycleListener.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DCOPSolver/edu/cqu/core/SyncMailer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DCOPSolver/edu/cqu/framework/ALSAgent.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DCOPSolver/edu/cqu/framework/MALSAgent.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DCOPSolver/edu/cqu/gui/DOTrenderer$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DCOPSolver/edu/cqu/gui/DOTrenderer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DCOPSolver/edu/cqu/main/DSATest$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DCOPSolver/edu/cqu/main/DSATest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DCOPSolver/edu/cqu/ordering/BFSSyncAgent.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DCOPSolver/edu/cqu/ordering/DFSSyncAgent.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DCOPSolver/edu/cqu/parser/AgentsParser.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DCOPSolver/edu/cqu/parser/DialogUtil$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DCOPSolver/edu/cqu/parser/DialogUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DCOPSolver/edu/cqu/parser/Parser$AgentPair.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DCOPSolver/edu/cqu/parser/Parser.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DCOPSolver/edu/cqu/parser/ProblemParser.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DCOPSolver/edu/cqu/result/AbstractManipulator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DCOPSolver/edu/cqu/result/AddManipulator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DCOPSolver/edu/cqu/result/MaxManipulator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DCOPSolver/edu/cqu/result/MinManipulator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DCOPSolver/edu/cqu/result/Result.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DCOPSolver/edu/cqu/result/ResultAls.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DCOPSolver/edu/cqu/result/ResultCycle.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DCOPSolver/edu/cqu/result/SubtractManipulator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DCOPSolver/edu/cqu/result/annotations/AverageField.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DCOPSolver/edu/cqu/result/annotations/CycleLength.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DCOPSolver/edu/cqu/result/annotations/CycleOffset.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DCOPSolver/edu/cqu/result/annotations/NotRecordCostInCycle.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DCOPSolver/edu/cqu/result/interfaces/Manipulator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DCOPSolver/edu/cqu/te.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DCOPSolver/edu/cqu/utils/FileUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DCOPSolver/edu/test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/edu/cqu/algorithms/mgm/MGM2Agent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/cqu/algorithms/mgm/MGM2Agent.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -26,11 +78,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="MGMAgent.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/edu/cqu/algorithms/mgm/MGMAgent.java">
+      <file leaf-file-name="COCOAgent.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/edu/cqu/algorithms/coco/COCOAgent.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2418">
-              <caret line="15" column="27" lean-forward="true" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
+            <state relative-caret-position="364">
+              <caret line="80" column="31" selection-start-line="80" selection-start-column="31" selection-end-line="80" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -41,35 +93,26 @@
       <file leaf-file-name="DSAAgent.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/edu/cqu/algorithms/dsa/DSAAgent.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="130">
-              <caret line="14" column="40" lean-forward="true" selection-start-line="14" selection-start-column="40" selection-end-line="14" selection-end-column="40" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="1508">
+              <caret line="64" column="30" selection-start-line="64" selection-start-column="30" selection-end-line="64" selection-end-column="30" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DSATest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/edu/cqu/main/DSATest.java">
+      <file leaf-file-name="Agent.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/edu/cqu/core/Agent.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="364">
-              <caret line="14" column="60" lean-forward="true" selection-start-line="14" selection-start-column="60" selection-end-line="14" selection-end-column="60" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="1274">
+              <caret line="52" column="15" selection-start-line="52" selection-start-column="15" selection-end-line="52" selection-end-column="15" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MGM2Agent.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/edu/cqu/algorithms/mgm/MGM2Agent.java">
+      <file leaf-file-name="MGMAgent.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/edu/cqu/algorithms/mgm/MGMAgent.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
-              <caret line="27" column="8" selection-start-line="27" selection-start-column="8" selection-end-line="27" selection-end-column="8" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="2548">
+              <caret line="104" column="31" selection-start-line="104" selection-start-column="31" selection-end-line="104" selection-end-column="31" />
             </state>
           </provider>
         </entry>
@@ -119,7 +162,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/com/edu/cqu/core/FinishedListener.java" />
         <option value="$PROJECT_DIR$/src/com/edu/cqu/core/AsyncMailer.java" />
         <option value="$PROJECT_DIR$/src/com/edu/cqu/parser/ProblemParser.java" />
         <option value="$PROJECT_DIR$/src/com/edu/cqu/result/interfaces/Result.java" />
@@ -170,6 +212,7 @@
         <option value="$PROJECT_DIR$/src/edu/cqu/algorithms/mgm/MGMAgent.java" />
         <option value="$PROJECT_DIR$/src/edu/cqu/main/DSATest.java" />
         <option value="$PROJECT_DIR$/src/edu/cqu/algorithms/mgm/MGM2Agent.java" />
+        <option value="$PROJECT_DIR$/src/edu/cqu/algorithms/coco/COCOAgent.java" />
       </list>
     </option>
   </component>
@@ -182,11 +225,11 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="36" />
-    <option name="y" value="144" />
-    <option name="width" value="1083" />
-    <option name="height" value="711" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="228" />
+    <option name="y" value="21" />
+    <option name="width" value="1473" />
+    <option name="height" value="804" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -196,6 +239,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -211,7 +257,13 @@
             <path>
               <item name="DCOPSolver" type="b2602c69:ProjectViewProjectNode" />
               <item name="DCOPSolver" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
+              <item name=".idea" type="462c0819:PsiDirectoryNode" />
+              <item name="libraries" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DCOPSolver" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DCOPSolver" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="DCOPSolver" type="b2602c69:ProjectViewProjectNode" />
@@ -251,6 +303,24 @@
               <item name="edu" type="462c0819:PsiDirectoryNode" />
               <item name="cqu" type="462c0819:PsiDirectoryNode" />
               <item name="algorithms" type="462c0819:PsiDirectoryNode" />
+              <item name="coco" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DCOPSolver" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DCOPSolver" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="edu" type="462c0819:PsiDirectoryNode" />
+              <item name="cqu" type="462c0819:PsiDirectoryNode" />
+              <item name="algorithms" type="462c0819:PsiDirectoryNode" />
+              <item name="dsa" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DCOPSolver" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DCOPSolver" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="edu" type="462c0819:PsiDirectoryNode" />
+              <item name="cqu" type="462c0819:PsiDirectoryNode" />
+              <item name="algorithms" type="462c0819:PsiDirectoryNode" />
               <item name="mgm" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -261,13 +331,14 @@
               <item name="cqu" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="DCOPSolver" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="AndroidView" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -276,17 +347,25 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="Arquillian JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.Arquillian JUnit4" value="" />
     <property name="create.test.in.the.same.root" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/mSAM-master/mSAM-master/lib/jCoCoA.jar!/" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="copyright" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
       <recent name="com.edu.cqu.core" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\DCOP\DCOPSolver\src\com\edu\cqu\benchmark\dcop" />
+      <recent name="E:\DCOP\DCOPSolver\src\com\edu\cqu\benchmark" />
+      <recent name="E:\DCOP\DCOPSolver\src\com\edu\cqu\benchmark\randomdcops" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="edu.cqu.core" />
@@ -294,14 +373,6 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\DCOP\DCOPSolver\src\com\edu\cqu" />
       <recent name="E:\DCOP\DCOPSolver\src\com\edu" />
-    </key>
-    <key name="CreateTestDialog.Recents.Supers">
-      <recent name="" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\DCOP\DCOPSolver\src\com\edu\cqu\benchmark\dcop" />
-      <recent name="E:\DCOP\DCOPSolver\src\com\edu\cqu\benchmark" />
-      <recent name="E:\DCOP\DCOPSolver\src\com\edu\cqu\benchmark\randomdcops" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -461,11 +532,19 @@
       <workItem from="1536839960506" duration="6030000" />
       <workItem from="1537018445135" duration="1295000" />
       <workItem from="1537323651847" duration="5445000" />
+      <workItem from="1537767061005" duration="103000" />
+      <workItem from="1537767382416" duration="3386000" />
+      <workItem from="1537777131539" duration="3884000" />
+      <workItem from="1537837694414" duration="2997000" />
+      <workItem from="1537855792285" duration="624000" />
+      <workItem from="1537865954932" duration="1504000" />
+      <workItem from="1537926535539" duration="5687000" />
+      <workItem from="1537950463606" duration="4962000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="138670000" />
+    <option name="totallyTimeSpent" value="161817000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
@@ -473,7 +552,6 @@
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" order="7" weight="0.19931857" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
@@ -481,13 +559,12 @@
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.28960818" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.28960818" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18579236" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1108509" />
       <window_info anchor="right" id="Database" order="3" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.24872231" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
@@ -496,9 +573,11 @@
       <window_info anchor="bottom" id="Debug" order="3" weight="0.0" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Messages" order="7" weight="0.19931857" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.24872231" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -513,102 +592,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/edu/cqu/result/AddManipulator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="52">
-          <caret line="2" column="44" lean-forward="true" selection-start-line="2" selection-start-column="44" selection-end-line="2" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/Program Files (x86)/Java/jdk1.8.0_144/src.zip!/java/lang/reflect/AccessibleObject.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="189" column="38" selection-start-line="189" selection-start-column="19" selection-end-line="189" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/edu/cqu/result/MinManipulator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="4" column="20" lean-forward="true" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/edu/cqu/result/interfaces/Manipulator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="6" column="8" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/edu/cqu/result/SubtractManipulator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="20" column="26" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/edu/cqu/result/annotations/AverageField.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="9" column="18" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/edu/cqu/result/AbstractManipulator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="5" column="18" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/Program Files (x86)/Java/jdk1.8.0_144/src.zip!/java/lang/Class.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="12844">
-          <caret line="561" selection-start-line="561" selection-end-line="561" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/Program Files (x86)/Java/jdk1.8.0_144/src.zip!/java/lang/reflect/Array.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1274">
-          <caret line="72" column="25" selection-start-line="72" selection-start-column="25" selection-end-line="72" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/edu/cqu/algorithms/dsa.java" />
-    <entry file="file://$PROJECT_DIR$/src/edu/cqu/parser/DialogUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="78">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/edu/cqu/parser/Parser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="728">
-          <caret line="34" column="21" selection-start-line="34" selection-start-column="21" selection-end-line="34" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/edu/cqu/core/AgentIteratedOverListener.java" />
-    <entry file="jar://D:/Program Files (x86)/Java/jdk1.8.0_144/src.zip!/java/util/Queue.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4316">
-          <caret line="199" selection-start-line="199" selection-end-line="199" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/edu/cqu/algorithms/dsa/DSAAgent.java" />
-    <entry file="file://$PROJECT_DIR$/src/com/edu/cqu/main/rt.java" />
-    <entry file="file://$PROJECT_DIR$/src/edu/cqu/framework/ALSAgent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="482">
-          <caret line="25" column="29" selection-start-line="25" selection-start-column="29" selection-end-line="25" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/edu/cqu/core/SyncAgent.java" />
     <entry file="file://$PROJECT_DIR$/src/com/edu/cqu/core/Agent.java" />
     <entry file="file://$PROJECT_DIR$/src/edu/cqu/gui/DOTrenderer.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -621,13 +604,7 @@
     <entry file="file://$PROJECT_DIR$/src/com/edu/cqu/core/AgentManager.java" />
     <entry file="file://$PROJECT_DIR$/src/com/edu/cqu/core/SyncMailer.java" />
     <entry file="file://$PROJECT_DIR$/src/com/edu/cqu/core/Solver.java" />
-    <entry file="file://$PROJECT_DIR$/src/edu/cqu/algorithms/test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="52">
-          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/edu/cqu/algorithms/test.java" />
     <entry file="file://$PROJECT_DIR$/src/edu/test.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="52">
@@ -705,9 +682,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="650">
           <caret line="32" column="83" selection-start-line="32" selection-start-column="83" selection-end-line="32" selection-end-column="83" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -722,10 +696,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1612">
           <caret line="66" selection-start-line="66" selection-end-line="66" />
-          <folding>
-            <element signature="e#1896#1897#0" expanded="true" />
-            <element signature="e#1944#1945#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -740,11 +710,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="208">
           <caret line="10" column="7" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#926#927#0" expanded="true" />
-            <element signature="e#968#969#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -780,59 +745,77 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="384">
           <caret line="308" column="16" selection-start-line="308" selection-start-column="16" selection-end-line="308" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#12487#12488#0" expanded="true" />
-            <element signature="e#12538#12539#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/edu/cqu/core/Agent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="164">
-          <caret line="65" column="23" lean-forward="true" selection-start-line="65" selection-start-column="23" selection-end-line="65" selection-end-column="23" />
-          <folding>
-            <element signature="e#1129#1130#0" expanded="true" />
-            <element signature="e#1158#1159#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/edu/cqu/algorithms/dsa/DSAAgent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="14" column="40" lean-forward="true" selection-start-line="14" selection-start-column="40" selection-end-line="14" selection-end-column="40" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/edu/cqu/main/DSATest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="14" column="60" lean-forward="true" selection-start-line="14" selection-start-column="60" selection-end-line="14" selection-end-column="60" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/edu/cqu/algorithms/mgm/MGMAgent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2418">
-          <caret line="15" column="27" lean-forward="true" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/edu/cqu/algorithms/mgm/MGM2Agent.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="286">
-          <caret line="27" column="8" selection-start-line="27" selection-start-column="8" selection-end-line="27" selection-end-column="8" />
+          <caret line="27" selection-start-line="27" selection-end-line="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/edu/cqu/main/DSATest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="364">
+          <caret line="14" column="60" selection-start-line="14" selection-start-column="60" selection-end-line="14" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/libraries/jCoCoA.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/misc.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/modules.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/uiDesigner.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/vcs.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="jar://$USER_HOME$/Desktop/mSAM-master/mSAM-master/lib/jCoCoA.jar!/org/anon/cocoa/agents/LinkedAgent.class" />
+    <entry file="jar://$USER_HOME$/Desktop/mSAM-master/mSAM-master/lib/jCoCoA.jar!/org/anon/cocoa/solvers/CoCoSolver.class" />
+    <entry file="jar://$USER_HOME$/Desktop/mSAM-master/mSAM-master/lib/jCoCoA.jar!/org/anon/cocoa/solvers/DSASolver.class" />
+    <entry file="jar://$USER_HOME$/Desktop/mSAM-master/mSAM-master/lib/jCoCoA.jar!/org/anon/cocoa/agents/AbstractAgent.class" />
+    <entry file="jar://$USER_HOME$/Desktop/mSAM-master/mSAM-master/lib/jCoCoA.jar!/org/anon/cocoa/MailMan.class" />
+    <entry file="jar://$USER_HOME$/Desktop/mSAM-master/mSAM-master/lib/jCoCoA.jar!/org/anon/cocoa/ExperimentControl.class" />
+    <entry file="jar://$USER_HOME$/Desktop/mSAM-master/mSAM-master/lib/jCoCoA.jar!/org/anon/cocoa/solvers/CoCoASolver.class" />
+    <entry file="jar://$USER_HOME$/Desktop/mSAM-master/mSAM-master/lib/jCoCoA.jar!/org/anon/cocoa/agents/ConstraintAgent.class" />
+    <entry file="jar://$USER_HOME$/Desktop/mSAM-master/mSAM-master/lib/jCoCoA.jar!/org/anon/cocoa/agents/Agent.class" />
+    <entry file="jar://$USER_HOME$/Desktop/mSAM-master/mSAM-master/lib/jCoCoA.jar!/org/anon/cocoa/solvers/Solver.class" />
+    <entry file="jar://$USER_HOME$/Desktop/mSAM-master/mSAM-master/lib/jCoCoA.jar!/org/anon/cocoa/agents/SolverAgent.class" />
+    <entry file="file://$PROJECT_DIR$/src/edu/cqu/algorithms/mgm/MGMAgent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2548">
+          <caret line="104" column="31" selection-start-line="104" selection-start-column="31" selection-end-line="104" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/edu/cqu/core/Agent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1274">
+          <caret line="52" column="15" selection-start-line="52" selection-start-column="15" selection-end-line="52" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/edu/cqu/algorithms/dsa/DSAAgent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1508">
+          <caret line="64" column="30" selection-start-line="64" selection-start-column="30" selection-end-line="64" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/edu/cqu/algorithms/coco/COCOAgent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="364">
+          <caret line="80" column="31" selection-start-line="80" selection-start-column="31" selection-end-line="80" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -914,6 +897,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
+          <last-edited>jCoCoA</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

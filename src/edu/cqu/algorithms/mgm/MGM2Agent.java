@@ -25,7 +25,7 @@ public class MGM2Agent extends SyncAgent {
     public MGM2Agent(int id, int[] domain, int[] neighbours, Map<Integer, int[][]> constraintCosts, Map<Integer, int[]> neighbourDomains, SyncMailer mailer) {
         super(id, domain, neighbours, constraintCosts, neighbourDomains, mailer);
         valueIndex = (int) (Math.random()*domain.length);
-        
+
     }
 
     @Override
