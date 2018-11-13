@@ -10,7 +10,7 @@ public abstract class Agent extends Process {
     protected int[] neighbors;
     protected Map<Integer,int[]> neighborDomains;
     protected Map<Integer,int[][]> constraintCosts;
-    protected HashMap<Integer,Integer> localView;
+    protected HashMap<Integer,Integer> neighborView;
     protected int valueIndex;
     protected int localCost;
 
@@ -23,13 +23,13 @@ public abstract class Agent extends Process {
         this.neighbors = neighbors;
         this.neighborDomains = neighborDomains;
         this.constraintCosts = constraintCosts;
-        localView = new HashMap<>();
+        neighborView = new HashMap<>();
     }
 
     @Override
     public void preExecution() {
         for (int neighborId:neighbors) {
-            localView.put(neighborId,0);
+            neighborView.put(neighborId,0);
         }
         initRun();
         postInit();
@@ -53,7 +53,7 @@ public abstract class Agent extends Process {
     public int getLocalCost(){
         int sumCost = 0;
         for (int neighborId : neighbors) {
-            sumCost += constraintCosts.get(neighborId)[valueIndex][localView.get(neighborId)];
+            sumCost += constraintCosts.get(neighborId)[valueIndex][neighborView.get(neighborId)];
         }
         return sumCost;
     }
@@ -61,17 +61,17 @@ public abstract class Agent extends Process {
     public int calLocalCost(int value){
         int sumCost = 0;
         for (int neighborId : neighbors) {
-            sumCost += constraintCosts.get(neighborId)[value][localView.get(neighborId)];
+            sumCost += constraintCosts.get(neighborId)[value][neighborView.get(neighborId)];
         }
         return sumCost;
     }
 
     protected int updateLocalView(int neighbourId,int valueIndex){
-        return localView.put(neighbourId,valueIndex);
+        return neighborView.put(neighbourId,valueIndex);
     }
 
     protected int getNeighbourValue(int neighbourId){
-        return localView.get(neighbourId);
+        return neighborView.get(neighbourId);
     }
 
     public static String array2String(int[] arr){

@@ -57,14 +57,14 @@ public class DSAAgent extends SyncAgent {
     }
 
     private void disposeValueMessage(Message message) {
-        localView.put(message.getIdSender(), (Integer) message.getValue());
+        neighborView.put(message.getIdSender(), (Integer) message.getValue());
         valueCount++;
         if (valueCount == neighbors.length){
             cycleCount ++;
             valueCount = 0;
             localCost = getLocalCost();
             HashMap<Integer,Integer> test = new HashMap<>();
-            test = localView;
+            test = neighborView;
             if (Math.random() < PI){
                 valueIndex = decision();
             }

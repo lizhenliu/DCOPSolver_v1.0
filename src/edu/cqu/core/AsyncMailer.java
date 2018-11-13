@@ -39,6 +39,16 @@ public class AsyncMailer extends Process {
 
     }
 
+    public synchronized void setResult(int id,Result result){
+        if (this.result == null) {
+            this.result = result;
+        } else {
+            this.result.add(result);
+            this.result.setAgentValues(id, result.getAgentValue(id));
+        }
+
+    }
+
     @Override
     public void execution() {
         synchronized (messagesQueue){

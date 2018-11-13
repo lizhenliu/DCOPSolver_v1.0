@@ -8,7 +8,7 @@ import edu.cqu.result.ResultCycle;
 public class DSATest {
     public static void main(String[] args) {
         Solver solver = new Solver();
-        solver.solve("config/am.xml","DSA", "problem/dcop/30/RANDOM_DCOP_30_10_density_0.2_2.xml", new FinishedListener() {
+        solver.solve("config/am.xml","DSA", "problem/dcop/GC/GRAPH_COLORING_30_3_density_0.1_0.xml", new FinishedListener() {
             @Override
             public void onFinished(Result result) {
                 ResultCycle resultCycle = (ResultCycle) result;

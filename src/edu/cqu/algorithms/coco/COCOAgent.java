@@ -1,15 +1,13 @@
 package edu.cqu.algorithms.coco;
 
-import edu.cqu.core.Message;
-import edu.cqu.core.SyncAgent;
-import edu.cqu.core.SyncMailer;
+import edu.cqu.core.*;
+import edu.cqu.result.ResultCycle;
 
-import java.net.Inet4Address;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Map;
 
-public class COCOAgent extends SyncAgent {
+public class COCOAgent extends AsyncAgent {
 
     public static final int MSG_TYPE_INQMSG = 101;
     public static final int MSG_TYPE_COSTMSG = 102;
@@ -25,144 +23,67 @@ public class COCOAgent extends SyncAgent {
     private HashMap<Integer,Integer> neighborView;
     private HashMap<Integer,Integer> sitaView;
     private HashMap<Integer,Integer> neighborStateView;
+    private HashMap<Integer,HashMap<Integer,Integer>> neighborsCostView;
     private HashSet<Integer> deltaSet;
     private int belta;
-
-    private int uniNum;
+    private int cycleTag;
+    
     private int idleNeibors;
     private int activeNeibors;
+    private int costMsgCount;
 
-    public COCOAgent(int id, int[] domain, int[] neighbours, Map<Integer, int[][]> constraintCosts, Map<Integer, int[]> neighbourDomains, SyncMailer mailer) {
+    public COCOAgent(int id, int[] domain, int[] neighbours, Map<Integer, int[][]> constraintCosts, Map<Integer, int[]> neighbourDomains, AsyncMailer mailer) {
         super(id, domain, neighbours, constraintCosts, neighbourDomains, mailer);
         neighborView = new HashMap<>();
         sitaView = new HashMap<>();
-        deltaSet = new HashSet<>();
         neighborStateView = new HashMap<>();
+        neighborsCostView = new HashMap<>();
+        deltaSet = new HashSet<>();
     }
 
     @Override
     protected void initRun() {
-        this.agentType = AGENT_TYPE_IDLE;
+        agentType = AGENT_TYPE_IDLE;
         belta = 1;
-        uniNum = domain.length; //?
-        idleNeibors = neighbors.length;
-        activeNeibors = 0;
+        costMsgCount = 0;
         for (int neighborId:neighbors) {
-            localView.put(neighborId,-1);
+            neighborView.put(neighborId,-1);
+            neighborStateView.put(neighborId,AGENT_TYPE_IDLE);
         }
         if (this.id == 1){
-            if (this.agentType == AGENT_TYPE_IDLE || this.agentType == AGENT_TYPE_HOLD){
-                this.agentType = AGENT_TYPE_ACTIVE;
-                sendUPDStateMessage(this.id,agentType);
-                sendINQMSGMessage(this.id,this.neighborView);
-                //waiting for all
-                uniNum = calUninum(sitaView);
-                if (uniNum <= belta || (activeNeibors == 0 || idleNeibors == 0)){
-                    int q = (int) (Math.random()*deltaSet.size());
-                    valueIndex = domain[q];
-                    agentType = AGENT_TYPE_DONE;
-                    sendUPDStateMessage(this.id,agentType);
-                    sendSetValMessage(localView);
-                }else {
-                    agentType = AGENT_TYPE_HOLD;
-                    sendUPDStateMessage(this.id,agentType);
-                }
-            }
+            startCoCoA();
         }
     }
 
-    private void disposeUPDStateMessage(Message message) {
-        int neighborState = (int) message.getValue();
-        neighborStateView.put(message.getIdSender(), neighborState);
-        if ((neighborState == AGENT_TYPE_HOLD)&&(this.agentType == AGENT_TYPE_HOLD)&&(idleNeibors == 0||activeNeibors == 0)){
-            belta ++;
-            //repeat algorithm
-        }else if ((neighborState == AGENT_TYPE_DONE)&&this.agentType == AGENT_TYPE_HOLD){
-            //repeat allgorithm
+    private void startCoCoA() {
+        System.out.println("test");
+        if (agentType == AGENT_TYPE_IDLE || agentType == AGENT_TYPE_HOLD){
+            System.out.println("testA");
+            agentType = AGENT_TYPE_ACTIVE;
+            sendUPDMessage(agentType);
+            sendINQMessage(this.neighborView);
         }
-
     }
 
-
-    private void sendSetValMessage(HashMap<Integer,Integer> view) {
+    private void sendUPDMessage(int agentType) {
         for (int neighborId:neighbors) {
-            Message message = new Message(this.id,neighborId,MSG_TYPE_SETVAL,view);
+            Message message = new Message(this.id,neighborId,MSG_TYPE_UPDSTATE,agentType);
             sendMessage(message);
         }
     }
 
-    private int calUninum(HashMap<Integer,Integer> view) {
-        int count = 0;
-        int minCost = Integer.MAX_VALUE;
-        for (int id:view.keySet()) {
-            if (view.get(id) < minCost){
-                HashSet<Integer> tempSet = new HashSet<>();
-                tempSet.add(id);
-                deltaSet = tempSet;
-                minCost = view.get(id);
-                count = 1;
-            }else if (view.get(id) == minCost){
-                deltaSet.add(id);
-                count++;
-            }
-        }
-        return count;
-    }
-
-    private void calcuSitaView(int neighborId) {
-        for (int k = 0; k < neighborDomains.get(neighborId).length; k++) {
-            int tempCost = 0;
-            for (int i = 0; i < domain.length; i++) {
-                int cost = 0;
-                int minCost = Integer.MAX_VALUE;
-                for (int neighborIndex : neighbors) {
-                    if (neighborIndex == neighborId){
-                        cost += constraintCosts.get(neighborId)[i][k];
-                    }else {
-                        if (localView.get(neighborId) == -1){
-                            cost += meanCost(neighborIndex,i);
-                        }else {
-                            cost += constraintCosts.get(neighborIndex)[i][localView.get(neighborIndex)];
-                        }
-                    }
-                    if (cost < minCost){
-                        minCost = cost;
-                    }
-                }
-                tempCost = minCost;
-            }
-            sitaView.put(k,tempCost);
-        }
-    }
-
-
-    private int meanCost(int neighborId, int value) {
-        int cost = 0;
-        int constraint = 0;
-        for (int i = 0; i < neighborDomains.get(neighborId).length; i++) {
-            cost += constraintCosts.get(neighborId)[value][i];
-        }
-        constraint = (int)(cost / neighborDomains.get(neighborId).length);
-        return constraint;
-    }
-
-    private void sendINQMSGMessage(int index, HashMap<Integer,Integer> view) {
+    private void sendINQMessage(HashMap<Integer,Integer> view) {
         for (int neighborId : neighbors) {
-            Message message = new Message(this.id,neighborId,MSG_TYPE_UPDSTATE,view);
-            sendMessage(message);
-        }
-    }
-
-    private void sendUPDStateMessage(int index, int type) {
-        for (int neighborId : neighbors) {
-            Message message = new Message(this.id,neighborId,MSG_TYPE_UPDSTATE,type);
+            Message message = new Message(this.id,neighborId,MSG_TYPE_INQMSG,view);
             sendMessage(message);
         }
     }
 
     @Override
     protected void runFinished() {
-
+        ResultCycle resultCycle = new ResultCycle();
+        resultCycle.setAgentValues(id,valueIndex);
+        asyncMailer.setResult(id,resultCycle);
     }
 
     @Override
@@ -171,24 +92,64 @@ public class COCOAgent extends SyncAgent {
             case MSG_TYPE_COSTMSG:
                 disposeCostMessage(message);
                 break;
-            case MSG_TYPE_UPDSTATE:
-                disposeUPDStateMessage(message);
-                break;
             case MSG_TYPE_INQMSG:
                 disposeINQMessage(message);
                 break;
             case MSG_TYPE_SETVAL:
                 disposeSetValMessage(message);
                 break;
+            case MSG_TYPE_UPDSTATE:
+                disposeUPDMessage(message);
+                break;
         }
     }
 
+    @SuppressWarnings("unchecked")
     private void disposeCostMessage(Message message) {
+        neighborsCostView.put(message.getIdSender(), (HashMap<Integer, Integer>) message.getValue());
+        costMsgCount++;
+        if (costMsgCount == neighbors.length){
+            System.out.println("ddd");
+            decision();
+        }
+    }
 
+    private void decision() {
+        int cost = Integer.MAX_VALUE;
+        for (int i = 0; i < domain.length; i++) {
+            int tempCost = 0;
+            for (int neighborId:neighborsCostView.keySet()) {
+                tempCost += neighborsCostView.get(neighborId).get(i);
+            }
+            if (tempCost < cost){
+                cost = tempCost;
+                deltaSet.clear();
+                deltaSet.add(i);
+            }else if (tempCost == cost){
+                deltaSet.add(i);
+            }
+        }
+        HashSet<Integer> tempSet = deltaSet;
+        Object[] tempArray = tempSet.toArray();
+        int q = (int) tempArray[(int) (Math.random()*tempSet.size())];
+        valueIndex = domain[q];
+        System.out.println("valueIndex: " + valueIndex);
+        agentType = AGENT_TYPE_DONE;
+        sendUPDMessage(agentType);
+        sendSetValMessage(this.neighborView);
+    }
+
+    private void sendSetValMessage(HashMap<Integer,Integer> view) {
+        for (int neighborId:neighbors) {
+            Message message = new Message(this.id,neighborId,MSG_TYPE_SETVAL,view);
+            sendMessage(message);
+        }
     }
 
     private void disposeINQMessage(Message message) {
-        calcuSitaView(message.getIdSender());
+        HashMap<Integer,Integer> view = new HashMap<>();
+        this.neighborView = mergeLocalView(view);
+        sitaView = calSitaView(message.getIdSender());
         sendCostMessage(sitaView);
     }
 
@@ -199,7 +160,86 @@ public class COCOAgent extends SyncAgent {
         }
     }
 
-    private void disposeSetValMessage(Message message) {
-
+    private HashMap<Integer,Integer> mergeLocalView(HashMap<Integer,Integer> view) {
+        HashMap<Integer,Integer> newView = this.neighborView;
+        for (int neighborId:view.keySet()) {
+            newView.put(neighborId,view.get(neighborId));
+        }
+        return newView;
     }
+
+    private HashMap<Integer,Integer> calSitaView(int neiIndex) {
+        HashMap<Integer,Integer> view = new HashMap<>();
+        int cost = Integer.MAX_VALUE;
+        for (int j = 0; j < neighborDomains.get(neiIndex).length; j++) {
+            for (int i = 0; i < domain.length; i++) {
+                cost = Integer.MAX_VALUE;
+                int tempcost = 0;
+                for (int neighborId:neighbors) {
+                    if (neighborId == neiIndex){
+                        tempcost += constraintCosts.get(neighborId)[i][j];
+                    } else {
+                        if (this.neighborView.get(neighborId)==-1){
+                            tempcost += meanConstraint(i,neighborId);
+                        } else {
+                            tempcost += constraintCosts.get(neighborId)[i][this.neighborView.get(neighborId)];
+                        }
+                    }
+                }
+                if(tempcost < cost){
+                    cost = tempcost;
+                }
+            }
+            view.put(j,cost);
+        }
+        return view;
+    }
+
+    private int meanConstraint(int value,int neighborId) {
+       int cost = 0;
+        for (int i = 0; i < neighborDomains.get(neighborId).length; i++) {
+            cost += constraintCosts.get(neighborId)[value][i];
+        }
+        cost /= neighborDomains.get(neighborId).length;
+        return  cost;
+    }
+
+
+    @SuppressWarnings("unchecked")
+    private void disposeSetValMessage(Message message) {
+        HashMap<Integer,Integer> reView = (HashMap<Integer, Integer>) message.getValue();
+        this.neighborView = mergeLocalView(reView);
+    }
+
+    private void disposeUPDMessage(Message message) {
+        System.out.println("update");
+        int reState = (int) message.getValue();
+        neighborStateView.put(message.getIdSender(), reState);
+        updateNeighborState();
+        if (agentType == AGENT_TYPE_HOLD
+                && (activeNeibors == 0 || idleNeibors == 0)){
+            belta ++;
+            startCoCoA();
+        }else if (reState == AGENT_TYPE_DONE && agentType == AGENT_TYPE_HOLD){
+            startCoCoA();
+        }else {
+            this.agentType = AGENT_TYPE_DONE;
+            sendUPDMessage(agentType);
+            System.out.println("finish");
+            stopProcess();
+        }
+    }
+
+    private void updateNeighborState() {
+        idleNeibors = 0;
+        activeNeibors = 0;
+        for (int neighborId:neighbors) {
+            if (neighborStateView.get(neighborId)==AGENT_TYPE_IDLE){
+                idleNeibors ++;
+            }else if (neighborStateView.get(neighborId)==AGENT_TYPE_ACTIVE){
+                activeNeibors ++;
+            }
+        }
+    }
+
 }

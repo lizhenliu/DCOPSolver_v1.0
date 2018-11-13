@@ -41,8 +41,8 @@ public abstract class BFSSyncAgent extends SyncAgent {
             }
             sendLayerMessage(children,level);
         }
-        
     }
+
     private void sendLayerMessage(List<Integer> childrenList,int parentLevel) {
         for (int childId:childrenList) {
             Message message = new Message(this.id,childId,MSG_TYPE_LAYER,parentLevel);

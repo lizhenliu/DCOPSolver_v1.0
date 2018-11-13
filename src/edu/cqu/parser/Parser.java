@@ -91,7 +91,6 @@ public class Parser {
             variableNameAgentId.put(name,agentNameId.get(agentName));
             problem.domains.put(agentNameId.get(agentName),domains.get(domain));
         }
-
     }
 
     private void parserDomain() {
@@ -122,7 +121,8 @@ public class Parser {
         int former;
         int latter;
         public AgentPair(String scope) {
-            String[] ids = scope.split(" ");
+            String[] ids = new String[2];
+                     ids =  scope.split(" ");
             if (ids.length != 2){
                 throw new IllegalArgumentException();
             }

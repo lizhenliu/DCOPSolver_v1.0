@@ -5,8 +5,8 @@ import edu.cqu.benchmark.dcop.randomDCOPs.RandomDCOPsGenerator;
 public class ColoringGraphGenerator extends RandomDCOPsGenerator {
 
 
-    public ColoringGraphGenerator(String problemType, int instanceId, int nbAgents, int domainSize, int minCost, int maxCost, double density) {
-        super(problemType, instanceId, nbAgents, domainSize, minCost, maxCost, density);
+    public ColoringGraphGenerator(String name, String problemType, int instanceId, int nbAgents, int domainSize, int minCost, int maxCost, double density) {
+        super(name, problemType, instanceId, nbAgents, domainSize, minCost, maxCost, density);
     }
 
     @Override

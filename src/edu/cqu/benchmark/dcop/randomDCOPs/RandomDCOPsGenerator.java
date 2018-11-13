@@ -8,8 +8,8 @@ import java.util.Set;
 public class RandomDCOPsGenerator extends AbstractGraph {
 
     public double density;
-    public RandomDCOPsGenerator(String problemType, int instanceId, int nbAgents, int domainSize, int minCost, int maxCost,double density) {
-        super(problemType, instanceId, nbAgents, domainSize, minCost, maxCost);
+    public RandomDCOPsGenerator(String name,String problemType, int instanceId, int nbAgents, int domainSize, int minCost, int maxCost,double density) {
+        super(name, nbAgents, domainSize, minCost, maxCost);
         this.density = density;
     }
 

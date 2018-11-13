@@ -1,5 +1,6 @@
 package edu.cqu.benchmark.dcop;
 
+import edu.cqu.benchmark.MeetingSchedulingGraph;
 import edu.cqu.benchmark.dcop.randomDCOPs.RandomDCOPsGenerator;
 import edu.cqu.benchmark.dcop.coloringGraph.ColoringGraphGenerator;
 
@@ -15,10 +16,11 @@ import java.util.HashMap;
 
 public class Contentwriter {
 
-    public static final String RANDOM_DCOP_PROBLEM = "RANDOM_DCOP_PROBLEM";
-    public static final String SCALEFREE_PROBLEM = "SCALEFREE_PROBLEM";
-    public static final String COLORING_GRAPH_PROBLEM = "COLORING_GRAPH_PROBLEM";
-    public static final String WEIGHT_COLORING_GRAPH_PROBLEM = "WEIGHT_COLORING_GRAPH_PROBLEM";
+    public static final String RANDOM_DCOP_PROBLEM = "RANDOM_DCOP";
+    public static final String SCALEFREE_PROBLEM = "SCALEFREE_Network";
+    public static final String COLORING_GRAPH_PROBLEM = "COLORING_GRAPH";
+    public static final String WEIGHT_COLORING_GRAPH_PROBLEM = "WEIGHT_COLORING_GRAPH";
+    public static final String PROBLEM_MEETING_SCHEDULING = "MEETING_SCHEDULING";
 
     public String dirPath;
     public String problemType;
@@ -41,27 +43,31 @@ public class Contentwriter {
     }
 
     private void generate() throws IOException {
-        String baseFileName = dirPath+"_"+problemType+"_"+ nbAgents+"_"+domainSize+"_";
+        StringBuilder baseFileName = new StringBuilder(dirPath + "\\" + problemType + "_" + nbAgents + "_" + domainSize + "_");
+        for (String key : extraPara.keySet()){
+            baseFileName.append(key).append("_");
+            baseFileName.append(extraPara.get(key)).append("_");
+        }
         int base = 0;
         Format format = Format.getPrettyFormat();
         format.setEncoding("UTF-8");
         XMLOutputter xmlOutputter = new XMLOutputter(Format.getPrettyFormat());
         for (int i = 0; i < nbInstance; i++) {
-            FileOutputStream stream = new FileOutputStream(baseFileName +(base+i)+".xml");
+            FileOutputStream stream = new FileOutputStream(baseFileName.toString() +(base+i)+".xml");
             Element root = new Element("instance");
             AbstractGraph graph = null;
             switch (problemType){
                 case RANDOM_DCOP_PROBLEM:
-                    graph = new RandomDCOPsGenerator(problemType,i,nbAgents,domainSize,minCost,maxCost,(double)(extraPara.get("density")));
+                    graph = new RandomDCOPsGenerator("instance" + i,problemType,i,nbAgents,domainSize,minCost,maxCost,(double)(extraPara.get("density")));
                     break;
                 case COLORING_GRAPH_PROBLEM:
-                    graph = new ColoringGraphGenerator(problemType,i,nbAgents,domainSize,minCost,maxCost,(double)(extraPara.get("density")));
+                    graph = new ColoringGraphGenerator("instance" + i,problemType,i,nbAgents,domainSize,minCost,maxCost,(double)(extraPara.get("density")));
                     break;
                 case WEIGHT_COLORING_GRAPH_PROBLEM:
-                    graph = new ColoringGraphGenerator(problemType,i,nbAgents,domainSize,minCost,maxCost,(double)(extraPara.get("density")));
+                    graph = new ColoringGraphGenerator("instance" + i,problemType,i,nbAgents,domainSize,minCost,maxCost,(double)(extraPara.get("density")));
                     break;
                 case SCALEFREE_PROBLEM:
-                    graph = new ScaleFreeNetWorkGenerator(problemType,i,nbAgents,domainSize,minCost,maxCost,20,(Integer)extraPara.get("m1"));
+                    graph = new ScaleFreeNetWorkGenerator("instance" + i,problemType,i,nbAgents,domainSize,minCost,maxCost,20,(Integer)extraPara.get("m1"));
                     break;
             }
             graph.generateConstraint();
@@ -81,8 +87,10 @@ public class Contentwriter {
             file.mkdirs();
         }
 
+
+
         while (true){
-            String filename = baseFileName + base +".xml";
+            String filename = baseFileName.toString() + base +".xml";
             if (!new File(filename).exists())
                 break;
             base++;
@@ -94,10 +102,10 @@ public class Contentwriter {
         HashMap<String,Object> paras = new HashMap<>();
         para.put("density",0.6);
         paras.put("m1",3);
-        String dir = "E:\\DCOP\\problems\\test1\\";
-        String problemType = COLORING_GRAPH_PROBLEM;
-        String problemTypes = SCALEFREE_PROBLEM;
-        Contentwriter writer = new Contentwriter(dir,problemType,1,20,10,1,100,para);
+        String dir = "E:\\DCOP\\problems\\test\\";
+        String problemType = PROBLEM_MEETING_SCHEDULING;
+//        String problemTypes = SCALEFREE_PROBLEM;
+        Contentwriter writer = new Contentwriter(dir,problemType,1,20,3,1,100,para);
 //        Contentwriter writer = new Contentwriter(dir,problemTypes,1,20,10,1,100,paras);
         writer.generate();
     }

@@ -15,6 +15,7 @@ public abstract class AbstractGraph {
     public String model = "Simple";
     public String constraintModel = "TKC";
     public String format = "XDisCSP 1.0";
+    protected String benchmark = "RandomDCOP";
     public int instanceId;
     public int nbAgents;
     public int nbVariables;
@@ -31,7 +32,8 @@ public abstract class AbstractGraph {
     public ArrayList<Integer> dest;
     public HashMap<Integer,Set<Integer>> adjacentTable;
 
-    public AbstractGraph(String problemType, int instanceId, int nbAgents, int domainSize, int minCost, int maxCost) {
+    public AbstractGraph(String name, int nbAgents, int domainSize, int minCost, int maxCost) {
+
         random = new Random();
         source = new ArrayList<>();
         dest = new ArrayList<>();
@@ -45,22 +47,25 @@ public abstract class AbstractGraph {
         this.nbVariables = nbAgents;
         this.setNbTuples(domainSize);
         this.nbTuples = getNbTuples();
+        this.name = name;
     }
 
     public Element getPresentation(){
-        Element presentation = new Element("instance" + instanceId);
-        presentation.setAttribute("type",this.getType());
-        presentation.setAttribute("benchmark",this.getProblemType());
-        presentation.setAttribute("model",this.getModel());
-        presentation.setAttribute("constraintModel",this.getConstraintModel());
-        presentation.setAttribute("format",this.getFormat());
+        Element presentation = new Element("presentation");
+        presentation.setAttribute("name",name);
+        presentation.setAttribute("type",type);
+        presentation.setAttribute("benchmark",benchmark);
+        presentation.setAttribute("model",model);
+        presentation.setAttribute("constraintModel",constraintModel);
+        presentation.setAttribute("format",format);
         return presentation;
     }
 
     public Element getAgents(){
-        Element agents = new Element("Agents");
+        Element agents = new Element("agents");
+        agents.setAttribute("nbAgents",String.valueOf(nbAgents));
         for (int i = 1; i < nbAgents + 1; i++) {
-            Element agent = new Element("Agent");
+            Element agent = new Element("agent");
             agent.setAttribute("name","A"+i);
             agent.setAttribute("id",String.valueOf(i));
             agent.setAttribute("description","Agent " + String.valueOf(i));
@@ -71,12 +76,12 @@ public abstract class AbstractGraph {
 
     public Element getDomains(){
         Element domains = new Element("domains");
-        for (int i = 1; i < domainSize+1; i++) {
-            Element domain = new Element("domain");
-            domain.setAttribute("name","D"+String.valueOf(i));
-            domain.setAttribute("nbValue",String.valueOf(domainSize));
-            domain.addContent("1.."+String.valueOf(domainSize));
-        }
+        domains.setAttribute("nbDomains","1");
+        Element domain = new Element("domain");
+        domain.setAttribute("name","D1");
+        domain.setAttribute("nbValues",String.valueOf(domainSize));
+        domain.addContent("1.." + domainSize);
+        domains.addContent(domain);
         return domains;
     }
 
@@ -85,12 +90,11 @@ public abstract class AbstractGraph {
         variables.setAttribute("nbVariables",String.valueOf(nbVariables));
         for (int i = 1; i < nbVariables + 1; i++) {
             Element variable = new Element("variable");
-            variable.setAttribute("name","X"+String.valueOf(i)+".1");
-            variable.setAttribute("agent","A"+String.valueOf(i));
+            variable.setAttribute("name","X"+i+".1");
+            variable.setAttribute("agent","A"+i);
             variable.setAttribute("id",String.valueOf(1));
-            variable.setAttribute("domain","D"+String.valueOf(domainSize));
+            variable.setAttribute("domain","D1");
             variable.setAttribute("description","variable " + String.valueOf(i) + ".1");
-
             variables.addContent(variable);
         }
         return variables;
@@ -104,9 +108,9 @@ public abstract class AbstractGraph {
         for (int i = 0; i < nbConstraints; i++) {
             Element constraint = new Element("constraint");
             constraint.setAttribute("name","C" + String.valueOf(i));
-            constraint.setAttribute("model",this.getModel());
+            constraint.setAttribute("model",this.getConstraintModel());
             constraint.setAttribute("arity","2");
-            constraint.setAttribute("scope","X"+String.valueOf(source.get(i))+".1" + " X" + dest.get(i)+".1");
+            constraint.setAttribute("scope","X"+source.get(i)+".1 X" + dest.get(i)+".1");
             constraint.setAttribute("reference","R" + String.valueOf(i));
             constraints.addContent(constraint);
         }
@@ -157,6 +161,8 @@ public abstract class AbstractGraph {
         stringBuilder.deleteCharAt(stringBuilder.length() - 1);
         return stringBuilder.toString();
     }
+
+
 
     protected abstract void generateConstraint();
 

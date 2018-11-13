@@ -3,6 +3,7 @@
     <agents>
         <agent name="MGM" class="edu.cqu.algorithms.mgm.MGMAgent" method="SYNC"/>
         <agent name="DSA" class="edu.cqu.algorithms.dsa.DSAAgent" method="SYNC"/>
+        <agent name="COCOA" class="edu.cqu.algorithms.coco.COCOAgent" method="SYNC"/>
         <agent name="SBB" class="edu.cqu.algorithms.sbb.SBBAgent" method="SYNC"/>
         <agent name="TreeBB" class="edu.cqu.algorithms.treebb.TreeBBAgent" method="SYNC"/>
         <agent name="MaxsumADSSVPLS" class="edu.cqu.algorithms.maxsum.adssvp.MaxsumADSSVPWithLocalSearchAgent" method="SYNC"/>

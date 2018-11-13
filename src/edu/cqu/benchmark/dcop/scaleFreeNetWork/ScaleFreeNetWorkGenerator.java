@@ -15,8 +15,8 @@ public class ScaleFreeNetWorkGenerator extends AbstractGraph {
     private Set<Integer> connectedSet;
     private HashMap<Integer,Integer> edgeCount;
 
-    public ScaleFreeNetWorkGenerator(String problemType, int instanceId, int nbAgents, int domainSize, int minCost, int maxCost,int m0,int m1) {
-        super(problemType, instanceId, nbAgents, domainSize, minCost, maxCost);
+    public ScaleFreeNetWorkGenerator(String name, String problemType, int instanceId, int nbAgents, int domainSize, int minCost, int maxCost,int m0,int m1) {
+        super(name, nbAgents, domainSize, minCost, maxCost);
         this.m0 = m0;
         this.m1 = m1;
         connectedSet = new HashSet<>();

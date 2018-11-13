@@ -85,7 +85,7 @@ public class MGMAgent extends SyncAgent {
 
     private void disposeValueMessage(Message message) {
         valueCount++;
-        localView.put(message.getIdSender(), (Integer) message.getValue());
+        neighborView.put(message.getIdSender(), (Integer) message.getValue());
         if (valueCount == neighbors.length){
             if (cycleCount < CYCLE_COUNT){
                 cycleCount ++;
